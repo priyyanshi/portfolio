@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Sidebar from './components/sidebar'
 import Header from './components/header'
-import styles from './components/components.module.css'
 
 class App extends Component{
   state =  {

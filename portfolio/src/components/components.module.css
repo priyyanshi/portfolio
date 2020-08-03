@@ -13,13 +13,31 @@
     box-sizing: border-box;
 }
 
+.resume {
+    position: relative;
+    width: 15vh;
+    height: 4vw;
+    background-color: #1A1A1D;
+    color: #c4b6ab;
+    border-color: #1A1A1D;
+    border-width: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    right: 10vw;
+    top: 2vh;
+} 
+
+.resume:hover {
+    background-color: #4E4E50;
+}
+
 .socialBar {
     position: fixed;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    /* box-shadow: 2px 2px 8px rgba(0,0,0,0.4); */
 }
 
 .socialBar a {
@@ -40,19 +58,21 @@ background: #557A95;
 color: white;
 }
 
-.header {
+.headerContents {
     overflow: hidden;
     position: fixed;
-    overflow: hidden;
     width: 48vw;
     height: 10vh;
     background-color: #1A1A1D;
-    -webkit-transform: translateX(51%);
-    -ms-transform: translateX(51%);
-    transform: translateX(51%);
+    -webkit-transform: translateX(102%);
+    -ms-transform: translateX(102%);
+    transform: translateX(102%);
+    /* box-shadow: 2px 2px 8px rgba(0,0,0,0.4); */
+    margin-top: 0.5vh;
+    border-radius: 10px;
 }
 
-.header a {
+.headerContents a {
     display: block;
     text-align: center;
     width: 16vw;
@@ -64,14 +84,35 @@ color: white;
     font-size: 20px;
 }
 
-.header a:hover {
+.headerContents a:hover {
     background-color: #4E4E50;
 }
 
 @media screen and (max-width: 500px) {
-    .header a {
+    .headerContents a {
       float: none;
       display: block;
       text-align: center;
     }
+}
+
+.logo {
+    float: left;
+    width: 11vh;
+    height: 11vh;
+    object-position: 1px 1px;
+    z-index: -1;
+}
+
+.header {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 88.5%;
+    background-color: #c4b6ab;
+    color: blue;
+    /* box-shadow: 2px 2px 8px rgba(0,0,0,0.4); */
 }
