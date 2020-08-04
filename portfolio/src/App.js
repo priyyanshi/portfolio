@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Sidebar from './components/sidebar'
 import Header from './components/header'
+import {slide as Menu} from 'react-burger-menu'
+import About from './components/about'
 
 class App extends Component{
   state =  {
@@ -22,8 +24,12 @@ class App extends Component{
   
     return (
       <div className="App">
-        <Sidebar/>
-        <Header/>
+        <BurgerMenu  isOpen={false} right pageWrapId="other" outerContainerId={"App"}/>
+          <div id="other">
+            <Sidebar/>
+            <Header/>
+            <About/>
+          </div>
       </div>
     )
   }
@@ -31,6 +37,16 @@ class App extends Component{
 
 function demoAsyncCall() {
   return new Promise((resolve) => setTimeout(() => resolve(), 2500));
+}
+
+function BurgerMenu(props) {
+  return(
+      <Menu {...props}>
+          <a className="menu-item" id="#">About</a>
+          <a className="menu-item" id="#>">Projects</a>
+          <a className="menu-item" id="#">Contact</a>
+      </Menu>
+  )
 }
 
 export default App;
