@@ -10,7 +10,7 @@ export default function Header(props) {
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                 <img src={logo} alt="P" className={styles.logo}></img>
                 <div >
-                    <a id="#">About</a>
+                    <a id="#">About Me</a>
                     <a id="#>">Projects</a>
                     <a id="#">Contact</a>
                 </div>
