@@ -33,9 +33,10 @@ class App extends Component{
             <Sidebar/>
             <Header/>
             <Front/>
-            <About/>
-            <Projects/>
+            
           </div>
+          <About/>
+          <Projects/>
       </div>
     )
   }
