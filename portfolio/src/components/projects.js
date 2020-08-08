@@ -25,7 +25,6 @@ export default class Projects extends Component {
             })
         }
         if (isVisible && this.state.count === 1) {
-            console.log("up")
             this.setState({active: false, animate: animation.pulse})
         }
     }
@@ -36,13 +35,10 @@ export default class Projects extends Component {
             <div ref={this.wrapper}>
                 <VisibilitySensor active={this.state.active} onChange={this.styleChange}>
                 <StyleRoot>
-                <div id="about" style={this.state.animate} className={styles.projects}>
-                    <div id="about-text" className={styles.projectsText}>
+                <div id="projects" style={this.state.animate} className={styles.projects}>
+                    <div id="projects-text" className={styles.projectsText}>
                         Projects
                     </div>
-                    <svg>
-                        <line x1="20%" y1="50%" x2="80%" y2="50%" style={{stroke:'#7395AE',strokeWidth:'0.1vw'}}></line>
-                    </svg>
                 </div>
                 </StyleRoot>
                 </VisibilitySensor>

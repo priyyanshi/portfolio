@@ -3,8 +3,8 @@ import './App.css';
 import Sidebar from './components/sidebar'
 import Header from './components/header'
 import {stack as Menu} from 'react-burger-menu'
-import { BrowserRouter as Router, Route} from "react-router-dom";
-import { NavHashLink as Link } from 'react-router-hash-link';
+import {BrowserRouter as Router, Route} from "react-router-dom";
+import {NavHashLink as Link} from 'react-router-hash-link';
 
 import About from './components/about'
 import Projects from './components/projects'
@@ -41,8 +41,8 @@ class App extends Component{
               <div id="other" >
               </div>
           </div> 
-          <Route path="/about" exact component={About} />
-          <Route path="/projects" exact component={Projects} />
+          <Route path="/#about" exact component={About} />
+          <Route path="/#projects" exact component={Projects} />
         </Router>
       </div>
     )
@@ -56,8 +56,8 @@ function demoAsyncCall() {
 function BurgerMenu(props) {
   return(
       <Menu {...props}>
-          <Link smooth to="/#about" href="/#">About Me</Link>
-          <Link smooth to="/#projects" href="/#">Projects</Link>
+          <Link smooth to="/#about" href="./#">About Me</Link>
+          <Link smooth to="/#projects" href="./#">Projects</Link>
       </Menu>
   )
 }

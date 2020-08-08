@@ -25,7 +25,6 @@ export default class About extends Component {
             })
         }
         if (isVisible && this.state.count === 1) {
-            console.log("up")
             this.setState({active: false, animate: animation.pulse})
         }
     }
@@ -44,24 +43,23 @@ export default class About extends Component {
                         
                         <h4>
                             <br/> 
-                            Hey, I'm Priyanshi Patel and I am a 3rd year computer engineering student. 
+                            Hey, I'm Priyanshi Patel and I am a 3rd year computer engineering student at the University of Toronto. 
                             I am majoring in software engineering and minoring in A.I with a certificate in Engineering Leadership.
-                            I like to create projects to further 
-
+                            I enjoy learning and creating, as it pertains to software, because it allows me to better problem solve. 
                         </h4>
 
                         <h4>
+                            <br/>
                             I am particularly comfortable with the following languages:
+                            
                         </h4> 
                         <ul>
                             <li>Python</li>
                             <li>Javascript</li>
                             <li>C++</li>
                         </ul>
+                        
                     </div>
-                    {/* <svg>
-                        <line x1="50%" y1="15%" x2="50%" y2="75%" style={{stroke:'#7395AE',strokeWidth:'0.1vw'}}></line>
-                    </svg> */}
                 </div>
                 </StyleRoot>
                 </VisibilitySensor>

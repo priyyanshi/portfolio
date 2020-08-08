@@ -34,18 +34,18 @@
 .aboutText {
     position: absolute;
     margin-top: 10%;
+    float: center;
     font-size: 1.5vw;
     font-weight: bold;
     text-align: center;
-    left: 5%;
-    right: 80%;
-    width: 20%;
-    height: 80%;
+    width: 70%;
+    height: 10%;
+    left: 15%;
     color: #1A1A1D;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 6px 0px 8px -8px rgba(0,0,0,0.3);
+    box-shadow: 0px 6px 8px -8px rgba(41,60,71,0.4);
 }
 
 .aboutText:hover {
@@ -67,11 +67,11 @@
 
 .aboutInfo {
     position: relative;
-    width: 57%;
-    top: 15%;
+    width: 60%;
+    top: 30%;
     height: 60%;
     float: right;
-    right: 15%;
+    right: 20%;
     text-align: left;
 
 }
@@ -82,6 +82,10 @@
 
 .aboutInfo h4 {
     font-size: 1.2vw;
+    color: #69696B;
+}
+
+.aboutInfo ul {
     color: #69696B;
 }
 
