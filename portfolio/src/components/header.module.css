@@ -15,35 +15,6 @@
     box-sizing: border-box;
 }
 
-.socialBar {
-    position: fixed;
-    top: 50%;
-    z-index: 5;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
-    color: #379683;
-}
-
-.socialBar a {
-    display: block;
-    text-align: center;
-    padding: 16px;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 20px;
-}
-
-.socialBar a:hover {
-    background-color: #7395AE;
-}
-
-.socialButton {
-background: #293C47;
-color: white;
-}
-
 
 .header {
     width: 100%;
@@ -75,7 +46,7 @@ color: white;
 } 
 
 .header button:hover {
-    background-color: #69696B;
+    background-color: #7395AE;
 }
 
 
@@ -112,7 +83,7 @@ color: white;
 }
 
 .header a:hover {
-    background-color: #69696B;
+    background-color: #7395AE;
 }
 
 .header img {
@@ -123,108 +94,6 @@ color: white;
     z-index: -1;
 }
 
-
-.front {
-    display: block;
-    position: absolute;
-    background-color: #c4b6ab;
-    width: 90%;
-    height: 75vh; 
-    top: 15%;
-    right: 3%;
-    left: 7%;
-}
-
-.front:hover {
-    background-color: green;
-}
-
-.frontText{
-    position: relative;
-    float: left;
-    width: 60%;
-    height: 60vh;
-    left: 20%;
-    top: 12%;
-    text-align: center;
-}
-
-.frontText:hover {
-    background-color: yellow;
-}
-
-.frontText h3{
-    color: #557A95;
-    font-size: 4vw;
-
-}
-
-.frontText h1{
-    color: #1A1A1D;
-    font-weight: bold;
-    font-size: 6vw;
-}
-
-.frontText h2{
-    color: #293C47;
-    font-weight: bold;
-    font-size: 3vw;
-}
-
-.frontText h4{
-    color: #5D5C61;
-    font-size: 1.5vw;
-}
-
-.frontText button{
-    position: relative;
-    width: 15%;
-    height: 5vh;
-    font-size: 2vw;
-    background-color: #1A1A1D;
-    color: #c4b6ab;
-    border: none;
-    outline: none;
-    border-radius: 0.5vw;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
-} 
-
-.frontText button:hover {
-    background-color: #69696B;
-}
-
-.about  {
-    display: block;
-    position: relative;
-    background-color: #c4b6ab;
-    width: 90%;
-    height: 100vh; 
-    margin-top: 85%;
-    right: 3%;
-    left: 7%;
-}
-
-.about:hover {
-    background-color: green;
-}
-
-
-
-
-.projects {
-    display: block;
-    position: relative;
-    background-color: #c4b6ab;
-    width: 90%;
-    height: 100vh; 
-    margin-top: 5%;
-    right: 3%;
-    left: 7%;
-}
-
-.projects:hover {
-    background-color: green;
-}
 
 
 
@@ -258,40 +127,6 @@ color: white;
         width: 15vh;
         height: 15vh;
     }
-
-    .front {
-        height: 95vh;
-    }
-
-    .frontText {
-        top: 5%;
-        left: 7%;
-        right: 7%;
-        width: 86%;
-    }
-
-    .frontText h3 {
-        font-size: 5vw;
-    }
-
-    .frontText h1 {
-        font-size: 8vw;
-    }
-
-    .frontText h2 {
-        font-size: 3vw;
-    }
-
-    .frontText h4 {
-        font-size: 2vw;
-    }
-
-    .about {
-        margin-top: 110vh;
-    }
-
-    
-    
     
 }
   
@@ -326,37 +161,7 @@ color: white;
         height: 15vh;
     }
 
-    .front {
-        height: 95vh;
-    }
-
-    .frontText {
-        top: 5%;
-        left: 7%;
-        right: 7%;
-        width: 86%;
-    }
-
-    .frontText h3 {
-        font-size: 5vw;
-    }
-
-    .frontText h1 {
-        font-size: 8vw;
-    }
-
-    .frontText h2 {
-        font-size: 3vw;
-    }
-
-    .frontText h4 {
-        font-size: 2vw;
-    }
-
-    .about {
-        margin-top: 120vh;
-    }
-
+   
 }
 
 /* 
@@ -388,37 +193,6 @@ color: white;
     .header img {
         width: 15vh;
         height: 15vh;
-    }
-
-    .front {
-        height: 95vh;
-    }
-
-    .frontText {
-        top: 15%;
-        left: 7%;
-        right: 7%;
-        width: 86%;
-    }
-
-    .frontText h3 {
-        font-size: 6vw;
-    }
-
-    .frontText h1 {
-        font-size: 9vw;
-    }
-
-    .frontText h2 {
-        font-size: 4vw;
-    }
-
-    .frontText h4 {
-        font-size: 2.5vw;
-    }
-
-    .about {
-        margin-top: 100vh;
     }
 
 }
@@ -454,37 +228,6 @@ color: white;
         height: 15vh;
     }
 
-    .front {
-        height: 95vh;
-    }
-
-    .frontText {
-        top: 15%;
-        left: 7%;
-        right: 7%;
-        width: 86%;
-    }
-
-    .frontText h3 {
-        font-size: 5vw;
-    }
-
-    .frontText h1 {
-        font-size: 8vw;
-    }
-
-    .frontText h2 {
-        font-size: 3vw;
-    }
-
-    .frontText h4 {
-        font-size: 2vw;
-    }
-
-    .about {
-        margin-top: 110vh;
-    }
-
 
 }
 
@@ -504,7 +247,7 @@ color: white;
 
     .header button {
         width: 20%;
-        left: 51%;
+        left: 45%;
         font-size: 3vw;
         border-width: 1vw;
         border-radius: 4vw;
@@ -519,36 +262,7 @@ color: white;
         height: 15vh;
     }
 
-    .front {
-        height: 95vh;
-    }
-
-    .frontText {
-        top: 5%;
-        left: 7%;
-        right: 7%;
-        width: 86%;
-    }
-
-    .frontText h3 {
-        font-size: 5vw;
-    }
-
-    .frontText h1 {
-        font-size: 8vw;
-    }
-
-    .frontText h2 {
-        font-size: 3vw;
-    }
-
-    .frontText h4 {
-        font-size: 2vw;
-    }
-
-    .about {
-        margin-top: 110vh;
-    }
+    
 
 }
 
@@ -583,35 +297,7 @@ color: white;
         height: 15vh;
     }
 
-    .front {
-        height: 95vh;
-    }
-
-    .frontText {
-        left: 7%;
-        right: 7%;
-        width: 86%;
-    }
-
-    .frontText h3 {
-        font-size: 5vh;
-    }
-
-    .frontText h1 {
-        font-size: 9vh;
-    }
-
-    .frontText h2 {
-        font-size: 3vh;
-    }
-
-    .frontText h4 {
-        font-size: 2vh;
-    }
-
-    .about {
-        margin-top: 100vh;
-    }
+   
 
 }
 

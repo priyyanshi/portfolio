@@ -49,10 +49,8 @@
 /* General sidebar styles */
 .bm-menu {
   background: #1A1A1D;
-  align-items: center;
-  line-height: 100%; 
   font-size: 5vw;
-  padding-top: 60%;
+  padding-top: 25%;
 }
 
 /* Morph shape necessary with bubble or elastic */

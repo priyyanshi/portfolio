@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 import './App.css';
 import Sidebar from './components/sidebar'
 import Header from './components/header'
-import {slide as Menu} from 'react-burger-menu'
+import {stack as Menu} from 'react-burger-menu'
+import { BrowserRouter as Router, Route} from "react-router-dom";
+import { NavHashLink as Link } from 'react-router-hash-link';
+
 import About from './components/about'
 import Projects from './components/projects'
+
+
 import Front from './components/front'
-import Bot from './components/bot'
 
 class App extends Component{
   state =  {
@@ -26,17 +30,20 @@ class App extends Component{
     }
   
     return (
-      <div className="App">
-        <BurgerMenu  isOpen={false} right pageWrapId="other" outerContainerId={"App"}/>
-          <div id="other">
-            <Bot/>
-            <Sidebar/>
-            <Header/>
-            <Front/>
-            
-          </div>
-          <About/>
-          <Projects/>
+      <div>
+        <Router>
+          <Header/>
+          <Sidebar/>
+          <Front/>
+        
+          <div className="App">
+            <BurgerMenu  isOpen={false} right  pageWrapId="other" outerContainerId={"App"}/>
+              <div id="other" >
+              </div>
+          </div> 
+          <Route path="/about" exact component={About} />
+          <Route path="/projects" exact component={Projects} />
+        </Router>
       </div>
     )
   }
@@ -49,9 +56,8 @@ function demoAsyncCall() {
 function BurgerMenu(props) {
   return(
       <Menu {...props}>
-          <a className="menu-item" id="#">About Me</a>
-          <a className="menu-item" id="#>">Projects</a>
-          <a className="menu-item" id="#">Contact</a>
+          <Link smooth to="/#about" href="/#">About Me</Link>
+          <Link smooth to="/#projects" href="/#">Projects</Link>
       </Menu>
   )
 }

@@ -1,0 +1,303 @@
+/* light gray : #69696B */
+/* dark gray : #5D5C61 */
+/* darker gray : #1A1A1D */
+/* light blue : #7395AE */
+/* dark blue : #557A95 */
+/* darker blue: #293C47 */
+/* light brown : #c4b6ab */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+.front {
+    display: block;
+    position: absolute;
+    background-color: #c4b6ab;
+    width: 90%;
+    height: 70vh; 
+    top: 15%;
+    right: 3%;
+    left: 7%;
+}
+
+/* .front:hover {
+    background-color: green;
+} */
+
+.frontText{
+    position: relative;
+    float: left;
+    width: 60%;
+    height: 55vh;
+    left: 20%;
+    margin-top: 7%;
+    text-align: center;
+}
+
+/* .frontText:hover {
+    background-color: yellow;
+} */
+
+.frontText h3{
+    color: #557A95;
+    font-size: 4vw;
+
+}
+
+.frontText h1{
+    color: #1A1A1D;
+    font-weight: bold;
+    font-size: 6vw;
+}
+
+.frontText h2{
+    color: #293C47;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.frontText h4{
+    color: #5D5C61;
+    font-size: 1.3vw;
+}
+
+.frontText button{
+    position: relative;
+    width: 15%;
+    height: 5vh;
+    font-size: 2vw;
+    background-color: #1A1A1D;
+    color: #c4b6ab;
+    border: none;
+    outline: none;
+    border-radius: 0.5vw;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+} 
+
+.frontText button:hover {
+    background-color: #7395AE;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) and (max-height: 500px){
+    
+    .front {
+        height: 95vh;
+    }
+
+    .frontText {
+        top: 5%;
+        left: 7%;
+        right: 7%;
+        width: 86%;
+    }
+
+    .frontText h3 {
+        font-size: 5vw;
+    }
+
+    .frontText h1 {
+        font-size: 8vw;
+    }
+
+    .frontText h2 {
+        font-size: 3vw;
+    }
+
+    .frontText h4 {
+        font-size: 2vw;
+    }
+    
+}
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+@media (min-width: 1025px) and (max-width: 1280px) {
+   
+
+    .front {
+        height: 95vh;
+    }
+
+    .frontText {
+        top: 5%;
+        left: 7%;
+        right: 7%;
+        width: 86%;
+    }
+
+    .frontText h3 {
+        font-size: 5vw;
+    }
+
+    .frontText h1 {
+        font-size: 8vw;
+    }
+
+    .frontText h2 {
+        font-size: 3vw;
+    }
+
+    .frontText h4 {
+        font-size: 2vw;
+    }
+}
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+
+    .front {
+        height: 95vh;
+    }
+
+    .frontText {
+        top: 15%;
+        left: 7%;
+        right: 7%;
+        width: 86%;
+    }
+
+    .frontText h3 {
+        font-size: 6vw;
+    }
+
+    .frontText h1 {
+        font-size: 9vw;
+    }
+
+    .frontText h2 {
+        font-size: 4vw;
+    }
+
+    .frontText h4 {
+        font-size: 2.5vw;
+    }
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+
+    .front {
+        height: 95vh;
+    }
+
+    .frontText {
+        top: 15%;
+        left: 7%;
+        right: 7%;
+        width: 86%;
+    }
+
+    .frontText h3 {
+        font-size: 5vw;
+    }
+
+    .frontText h1 {
+        font-size: 8vw;
+    }
+
+    .frontText h2 {
+        font-size: 3vw;
+    }
+
+    .frontText h4 {
+        font-size: 2vw;
+    }
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+   
+
+    .front {
+        height: 95vh;
+    }
+
+    .frontText {
+        top: 5%;
+        left: 7%;
+        right: 7%;
+        width: 86%;
+    }
+
+    .frontText h3 {
+        font-size: 5vw;
+    }
+
+    .frontText h1 {
+        font-size: 8vw;
+    }
+
+    .frontText h2 {
+        font-size: 3vw;
+    }
+
+    .frontText h4 {
+        font-size: 2vw;
+    }
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    
+
+    .front {
+        height: 95vh;
+    }
+
+    .frontText {
+        left: 7%;
+        right: 7%;
+        width: 86%;
+    }
+
+    .frontText h3 {
+        font-size: 5vh;
+    }
+
+    .frontText h1 {
+        font-size: 9vh;
+    }
+
+    .frontText h2 {
+        font-size: 3vh;
+    }
+
+    .frontText h4 {
+        font-size: 2vh;
+    }
+}
+
+
