@@ -27,9 +27,9 @@
     left: 7%;
 }
 
-/* .front:hover {
+.front:hover {
     background-color: green;
-} */
+}
 
 .frontText{
     position: relative;
@@ -41,9 +41,9 @@
     text-align: center;
 }
 
-/* .frontText:hover {
+.frontText:hover {
     background-color: yellow;
-} */
+}
 
 .frontText h3{
     color: #557A95;
@@ -166,7 +166,8 @@
     
 
     .front {
-        height: 95vh;
+        top: 30%;
+        height: 50vh;
     }
 
     .frontText {
@@ -174,6 +175,7 @@
         left: 7%;
         right: 7%;
         width: 86%;
+        height: 40%;
     }
 
     .frontText h3 {
@@ -202,7 +204,8 @@
     
 
     .front {
-        height: 95vh;
+        height: 100vh;
+        top: 20%;
     }
 
     .frontText {
@@ -210,6 +213,7 @@
         left: 7%;
         right: 7%;
         width: 86%;
+        height: 90vh;
     }
 
     .frontText h3 {
@@ -238,7 +242,7 @@
    
 
     .front {
-        height: 95vh;
+        height: 100vh;
     }
 
     .frontText {
@@ -274,13 +278,15 @@
     
 
     .front {
-        height: 95vh;
+        height: 100vh;
+        top: 25%;
     }
 
     .frontText {
         left: 7%;
         right: 7%;
         width: 86%;
+        height: 80%;
     }
 
     .frontText h3 {

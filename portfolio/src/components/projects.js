@@ -39,6 +39,9 @@ export default class Projects extends Component {
                     <div id="projects-text" className={styles.projectsText}>
                         Projects
                     </div>
+                    <svg>
+                        <line x1="22%" y1="50%" x2="100%" y2="50%" style={{stroke: '#7395AE', strokeWidth: '0.2vw'}}></line>
+                    </svg>
                 </div>
                 </StyleRoot>
                 </VisibilitySensor>

@@ -3,6 +3,7 @@ import styles from './about.module.css'
 import {animation} from './animations'
 import {StyleRoot} from 'radium'
 import VisibilitySensor from 'react-visibility-sensor'
+import { NavHashLink as Link } from 'react-router-hash-link';
 
 export default class About extends Component {
     constructor() {
@@ -37,26 +38,40 @@ export default class About extends Component {
                 <StyleRoot>
                 <div id="about" style={this.state.animate} className={styles.about}>
                     <div id="about-text" className={styles.aboutText}>
-                        About Me
+                            About Me    
                     </div>
+                    <svg>
+                        <line x1="22%" y1="50%" x2="100%" y2="50%" style={{stroke: '#7395AE', strokeWidth: '0.2vw'}}></line>
+                    </svg>
                     <div className={styles.aboutInfo}>
                         
                         <h4>
                             <br/> 
-                            Hey, I'm Priyanshi Patel and I am a 3rd year computer engineering student at the University of Toronto. 
+                            Hey, I'm Priyanshi Patel and I am a 3rd year computer engineering student at the <a href="https://www.utoronto.ca/" target="_blank"> <span style={{color: '#557A95', fontWeight:'bold'}}> University of Toronto </span> </a>. 
                             I am majoring in software engineering and minoring in A.I with a certificate in Engineering Leadership.
-                            I enjoy learning and creating, as it pertains to software, because it allows me to better problem solve. 
+                            Making projects, such as the ones displayed here, help me get a better understanding of the industry and narrow down where my interests lie.
+                            <br/> <br/>
+                        </h4>
+                        <h4>
+                            My technical experience consists of my experience as a Software Intern at <a href="https://www.getfetch.ca/index.html" target="_blank"> <span style={{color: '#557A95', fontWeight:'bold'}}> Fetch </span> </a>. 
+                            As an intern, I was able to work with Node.js and Meteor.js for the devlopment of a CRM system. 
                         </h4>
 
                         <h4>
                             <br/>
-                            I am particularly comfortable with the following languages:
-                            
+                            Additionally, through coursework, internships, and <Link smooth to="/#projects" href="/#"><span style={{color: '#557A95', fontWeight:'bold'}}> projects </span></Link> I have become comfortable with the following languages, databases, frameworks, and libraries:
+                            <br/> <br/>
                         </h4> 
                         <ul>
                             <li>Python</li>
-                            <li>Javascript</li>
+                            <li>Javascript (ES6+)</li>
                             <li>C++</li>
+                            <li>HTML &amp; CSS</li>
+
+                            <li>Node.js</li>
+                            <li>React</li>
+                            <li>p5.js</li>
+                            <li>MongoDB</li>
                         </ul>
                         
                     </div>
