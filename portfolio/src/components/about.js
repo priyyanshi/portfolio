@@ -41,25 +41,25 @@ export default class About extends Component {
                             About Me    
                     </div>
                     <svg>
-                        <line x1="22%" y1="50%" x2="100%" y2="50%" style={{stroke: '#7395AE', strokeWidth: '0.2vw'}}></line>
+                        <line x1="22%" y1="50%" x2="100%" y2="50%" style={{stroke: '#7395AE', strokeWidth: '0.15vw'}}></line>
                     </svg>
                     <div className={styles.aboutInfo}>
                         
                         <h4>
                             <br/> 
-                            Hey, I'm Priyanshi Patel and I am a 3rd year computer engineering student at the <a href="https://www.utoronto.ca/" target="_blank"> <span style={{color: '#557A95', fontWeight:'bold'}}> University of Toronto </span> </a>. 
+                            Hey, I'm Priyanshi Patel and I am a 3rd year computer engineering student at the <a className={styles.dohover} href="https://www.utoronto.ca/" target="_blank"> <span style={{color: '#557A95', fontWeight:'bold'}}> University of Toronto </span> </a>. 
                             I am majoring in software engineering and minoring in A.I with a certificate in Engineering Leadership.
                             Making projects, such as the ones displayed here, help me get a better understanding of the industry and narrow down where my interests lie.
                             <br/> <br/>
                         </h4>
                         <h4>
-                            My technical experience consists of my experience as a Software Intern at <a href="https://www.getfetch.ca/index.html" target="_blank"> <span style={{color: '#557A95', fontWeight:'bold'}}> Fetch </span> </a>. 
+                            My technical experience consists of my experience as a Software Intern at <a className={styles.dohover} href="https://www.getfetch.ca/index.html" target="_blank"> <span style={{color: '#557A95', fontWeight:'bold'}}> Fetch </span> </a>. 
                             As an intern, I was able to work with Node.js and Meteor.js for the devlopment of a CRM system. 
                         </h4>
 
                         <h4>
                             <br/>
-                            Additionally, through coursework, internships, and <Link smooth to="/#projects" href="/#"><span style={{color: '#557A95', fontWeight:'bold'}}> projects </span></Link> I have become comfortable with the following languages, databases, frameworks, and libraries:
+                            Additionally, through coursework, internships, and <Link className={styles.dohover}  smooth to="/#projects" href="/#"><span style={{color: '#557A95', fontWeight:'bold'}}> projects </span></Link> I have become comfortable with the following languages, databases, frameworks, and libraries:
                             <br/> <br/>
                         </h4> 
                         <ul>

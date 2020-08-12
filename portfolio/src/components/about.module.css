@@ -83,6 +83,7 @@
 .aboutInfo h4 {
     font-size: 1.1vw;
     color: #5D5C61;
+    padding: 0;
 }
 
 .aboutInfo ul {
@@ -104,6 +105,11 @@
     page-break-inside: avoid;
     break-inside: avoid;
     color: #557A95;
+}
+
+.dohover:hover {
+    text-decoration: underline;
+    color: #557A95
 }
 
 /* 

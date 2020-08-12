@@ -6,23 +6,24 @@ import VisibilitySensor from 'react-visibility-sensor'
 
 const projects = [
     {
-        name: 'Stuff'
+        name: 'Vector Field Visualizer',
+        git: 'https://github.com/priyyanshi/Vector-Fields',
+        live: 'https://vector-field-visualizer.herokuapp.com/'
     },
     {
-        name: 'Stuff1'
+        name: 'Binary Search Tree Visualizer',
+        git: 'https://github.com/priyyanshi/Data-structures-and-algos',
+        live: 'https://data-structures-and-algo.herokuapp.com/'
     },
     {
-        name: 'Stuff2'
+        name: 'VGA Graphing Calculator',
+        git: 'https://github.com/priyyanshi/Grapher-VGA-Graphing-Calculator-'
     },
     {
-        name: 'Stuff3'
-    },
-    {
-        name: 'Stuff4'
-    },
-    {
-        name: 'Stuff5'
-    }
+        name: 'Engineering Design: Praxis',
+        git: null,
+
+    }, 
 ]
 
 export default class Projects extends Component {
@@ -63,7 +64,7 @@ export default class Projects extends Component {
                         Projects
                     </div>
                     <svg>
-                        <line x1="22%" y1="50%" x2="100%" y2="50%" style={{stroke: '#7395AE', strokeWidth: '0.2vw'}}></line>
+                        <line x1="22%" y1="50%" x2="100%" y2="50%" style={{stroke: '#7395AE', strokeWidth: '0.15vw'}}></line>
                     </svg>
                     <div className={styles.holder}> 
                         {projComp}
