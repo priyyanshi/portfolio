@@ -1,5 +1,8 @@
-import {bounceInRight, pulse, bounceInLeft, slideInLeft, slideInUp } from 'react-animations'
+import {merge, bounceInRight, pulse, bounceInLeft, slideInLeft, slideInUp, headShake } from 'react-animations'
 import Radium from 'radium'
+
+const shaky = merge(pulse, headShake)
+
 
 const animation = {
     bounceInRight: {
@@ -22,6 +25,15 @@ const animation = {
         animation: 'x 2s',
         animationName: Radium.keyframes(slideInUp, 'slideInUp')
     },
+    headShake: {
+        animation: 'x 2s',
+        animationName: Radium.keyframes(headShake, 'headShake')
+    },
+    shaky: {
+        animation: 'x 2s',
+        animationName: Radium.keyframes(shaky, 'shaky')
+    },
+
 }
 
 export {animation}

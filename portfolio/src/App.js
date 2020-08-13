@@ -58,6 +58,8 @@ function BurgerMenu(props) {
       <Menu {...props}>
           <Link smooth to="/#about" href="./#">About Me</Link>
           <Link smooth to="/#projects" href="./#">Projects</Link>
+          <a href='/#'>Certificates</a>
+          <a href='/#'>Contact</a>
       </Menu>
   )
 }

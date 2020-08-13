@@ -6,7 +6,7 @@ import {StyleRoot} from 'radium'
 import { NavHashLink as Link } from 'react-router-hash-link';
 
 
-export default function Header(props) {
+export default function Header() {
     return(
         <div id="nav-header">
             <StyleRoot>
@@ -16,6 +16,8 @@ export default function Header(props) {
                 <div >
                     <Link smooth to="/#about" href="/#">About Me</Link>
                     <Link smooth to="/#projects" href="/#">Projects</Link>
+                    <a href='/#'>Certificates</a>
+                    <a href='/#'>Contact</a>
                 </div>
                 <button> Resume </button>
             </div>
