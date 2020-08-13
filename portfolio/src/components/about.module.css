@@ -27,16 +27,16 @@
     font-size: 0;
 }
 
-.about:hover {
+/* .about:hover {
     background-color: green;
-}
+} */
 
 .aboutText {
     position: absolute;
     top: 25%;
     float: center;
     text-align: center;
-    width: 15%;
+    width: 10%;
     height: 10%;
     left: 20%;
     display: flex;
@@ -47,9 +47,9 @@
     font-weight: bold;
 }
 
-.aboutText:hover {
+/* .aboutText:hover {
     background-color: yellow;
-}
+} */
 
 .about svg {
     display: block;
@@ -61,9 +61,9 @@
     left: 25%;
 }
 
-.about svg:hover {
+/* .about svg:hover {
     background-color: yellow;
-}
+} */
 
 .aboutInfo {
     position: relative;
@@ -76,9 +76,9 @@
 
 }
 
-.aboutInfo:hover {
+/* .aboutInfo:hover {
     background-color: yellow;
-}
+} */
 
 .aboutInfo h4 {
     font-size: 1.1vw;

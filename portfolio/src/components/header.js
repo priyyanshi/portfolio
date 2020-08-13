@@ -16,7 +16,9 @@ export default function Header() {
                 <div >
                     <Link smooth to="/#about" href="/#">About Me</Link>
                     <Link smooth to="/#projects" href="/#">Projects</Link>
-                    <a href='/#'>Certificates</a>
+                    <Link smooth to="/#contact" href="/#">Contact</Link>
+
+                    {/* <a href='/#'>Certificates</a> */}
                     <a href='/#'>Contact</a>
                 </div>
                 <button> Resume </button>

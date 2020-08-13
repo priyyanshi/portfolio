@@ -5,12 +5,11 @@ import Header from './components/header'
 import {stack as Menu} from 'react-burger-menu'
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import {NavHashLink as Link} from 'react-router-hash-link';
-
 import About from './components/about'
 import Projects from './components/projects'
-
-
 import Front from './components/front'
+import Contact from './components/contact';
+import Footer from './components/footer';
 
 class App extends Component{
   state =  {
@@ -43,6 +42,7 @@ class App extends Component{
           </div> 
           <Route path="/#about" exact component={About} />
           <Route path="/#projects" exact component={Projects} />
+          <Route path="/#contact" exact component={Contact} />
         </Router>
       </div>
     )
@@ -58,8 +58,8 @@ function BurgerMenu(props) {
       <Menu {...props}>
           <Link smooth to="/#about" href="./#">About Me</Link>
           <Link smooth to="/#projects" href="./#">Projects</Link>
-          <a href='/#'>Certificates</a>
-          <a href='/#'>Contact</a>
+          <Link smooth to="/#contact" href="./#">Contact</Link>
+          {/* <a href='/#'>Certificates</a> */}
       </Menu>
   )
 }

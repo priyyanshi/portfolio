@@ -27,9 +27,9 @@
     left: 7%;
 }
 
-.front:hover {
+/* .front:hover {
     background-color: green;
-}
+} */
 
 
 
@@ -43,9 +43,9 @@
     text-align: center;
 }
 
-.frontText:hover {
+/* .frontText:hover {
     background-color: yellow;
-}
+} */
 
 .frontText h3{
     color: #557A95;

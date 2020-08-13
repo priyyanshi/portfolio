@@ -41,7 +41,7 @@ export default class About extends Component {
                             About Me    
                     </div>
                     <svg>
-                        <line x1="22%" y1="50%" x2="100%" y2="50%" style={{stroke: '#7395AE', strokeWidth: '0.15vw'}}></line>
+                        <line x1="12%" y1="50%" x2="100%" y2="50%" style={{stroke: '#7395AE', strokeWidth: '0.15vw'}}></line>
                     </svg>
                     <div className={styles.aboutInfo}>
                         

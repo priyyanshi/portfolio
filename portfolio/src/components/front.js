@@ -5,8 +5,8 @@ import Projects from './projects'
 import {animation} from './animations'
 import {StyleRoot} from 'radium'
 import { NavHashLink as Link } from 'react-router-hash-link';
-
-
+import Contact from './contact'
+import Footer from './footer'
 
 export default class Front extends Component {
 
@@ -33,7 +33,9 @@ export default class Front extends Component {
 
                     <About/>
                     <Projects/>
-                </div>       
+                    <Contact/>
+                    <Footer/>
+                </div>  
             </div>
         )
     }

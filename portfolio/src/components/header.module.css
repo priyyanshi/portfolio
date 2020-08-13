@@ -42,6 +42,7 @@
     border-width: 0.5vw;
     border-radius: 1.5vw;
     outline: none;
+    transition: all 0.3s ease;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
 } 
 
@@ -74,12 +75,14 @@
     align-items: center;
     line-height: 70%; 
     transition: all 0.3s ease;
-    width: 25%;
+    width: 33.33%;
     height: 100%;
     transition: all 0.3s ease;
     float: left;
     color: #c4b6ab;
     font-size: 1.2vw;
+    transition: all 0.3s ease;
+
 }
 
 .header a:hover {

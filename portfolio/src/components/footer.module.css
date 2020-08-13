@@ -1,0 +1,15 @@
+.footer {
+    position: absolute;
+    display: flex;
+    width: 95%;
+    height: 8%;
+    text-align: center;
+    background-color: #c4b6ab;
+    color: #293C47;
+    border-top-style: solid;
+    border-top-width: 0.15vw;
+    border-top-color: #7395AE;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
