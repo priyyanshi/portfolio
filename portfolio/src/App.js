@@ -9,7 +9,7 @@ import About from './components/about'
 import Projects from './components/projects'
 import Front from './components/front'
 import Contact from './components/contact';
-import Footer from './components/footer';
+import ChatBot from './chat'
 
 class App extends Component{
   state =  {
@@ -31,6 +31,7 @@ class App extends Component{
     return (
       <div>
         <Router>
+          <ChatBot/>
           <Header/>
           <Sidebar/>
           <Front/>

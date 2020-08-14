@@ -69,8 +69,8 @@ export default class Projects extends Component {
     }
 
     render() {
-
-        const projComp = projects.map(proj => <Module name={proj.name} git={proj.git} live={proj.live} img={proj.img} tech={proj.tech} description={proj.description}/>)
+        let k = 0
+        const projComp = projects.map(proj => <Module key={k++} name={proj.name} git={proj.git} live={proj.live} img={proj.img} tech={proj.tech} description={proj.description}/>)
 
         return(
             <div ref={this.wrapper}>
@@ -103,7 +103,7 @@ class Module extends Component {
                 <div className={styles.module}>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                     <div className={styles.thumbnail}>
-                        <img type="image/png" src={this.props.img}/>
+                        <img alt="img" type="image/png" src={this.props.img}/>
                         <div id="overlay" className={styles.overlay}></div>
                     </div>
         
@@ -128,7 +128,7 @@ class Module extends Component {
         <div className={styles.module}>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
             <div className={styles.thumbnail}>
-                <img type="image/png" src={this.props.img}/>
+                <img alt="img"type="image/png" src={this.props.img}/>
                 <div id="overlay" className={styles.overlay}></div>
             </div>
 
@@ -145,7 +145,7 @@ class Module extends Component {
                     {this.props.description}
                     <br/> <br/>
                 </h4>
-                <a title="View live site!" rel="noopener noreferrer" href={this.props.live} target="_blank"><i class="fa fa-link" style={{color:'#c4b6ab'}}></i></a>
+                <a title="View live site!" rel="noopener noreferrer" href={this.props.live} target="_blank"><i className="fa fa-link" style={{color:'#c4b6ab'}}></i></a>
                 <a title="View on Github" rel="noopener noreferrer" href={this.props.git} target="_blank"><i className="fa fa-github" style={{color:'#c4b6ab'}}></i></a>
             </div>
         </div>      

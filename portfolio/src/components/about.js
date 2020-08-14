@@ -47,13 +47,13 @@ export default class About extends Component {
                         
                         <h4>
                             <br/> 
-                            Hey, I'm Priyanshi Patel and I am a 3rd year computer engineering student at the <a className={styles.dohover} href="https://www.utoronto.ca/" target="_blank"> <span style={{color: '#557A95', fontWeight:'bold'}}> University of Toronto </span> </a>. 
+                            Hey, I'm Priyanshi Patel and I am a 3rd year computer engineering student at the <a rel="noopener noreferrer" className={styles.dohover} href="https://www.utoronto.ca/" target="_blank"> <span style={{color: '#557A95', fontWeight:'bold'}}> University of Toronto </span> </a>. 
                             I am majoring in software engineering and minoring in A.I with a certificate in Engineering Leadership.
                             Making projects, such as the ones displayed here, help me get a better understanding of the industry and narrow down where my interests lie.
                             <br/> <br/>
                         </h4>
                         <h4>
-                            My technical experience consists of my experience as a Software Intern at <a className={styles.dohover} href="https://www.getfetch.ca/index.html" target="_blank"> <span style={{color: '#557A95', fontWeight:'bold'}}> Fetch </span> </a>. 
+                            My technical experience consists of my experience as a Software Intern at <a rel="noopener noreferrer" className={styles.dohover} href="https://www.getfetch.ca/index.html" target="_blank"> <span style={{color: '#557A95', fontWeight:'bold'}}> Fetch </span> </a>. 
                             As an intern, I was able to work with Node.js and Meteor.js for the devlopment of a CRM system. 
                         </h4>
 
