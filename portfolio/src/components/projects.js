@@ -145,8 +145,10 @@ class Module extends Component {
                     {this.props.description}
                     <br/> <br/>
                 </h4>
-                <a title="View live site!" rel="noopener noreferrer" href={this.props.live} target="_blank"><i className="fa fa-link" style={{color:'#c4b6ab'}}></i></a>
-                <a title="View on Github" rel="noopener noreferrer" href={this.props.git} target="_blank"><i className="fa fa-github" style={{color:'#c4b6ab'}}></i></a>
+                <div style={{display: 'block', position: 'absolute', top: '80%'}}>
+                    <a title="View live site!" rel="noopener noreferrer" href={this.props.live} target="_blank"><i className="fa fa-link" style={{color:'#c4b6ab'}}></i></a>
+                    <a title="View on Github" rel="noopener noreferrer" href={this.props.git} target="_blank"><i className="fa fa-github" style={{color:'#c4b6ab'}}></i></a>
+                </div>
             </div>
         </div>      
         )

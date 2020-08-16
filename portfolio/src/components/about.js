@@ -48,7 +48,7 @@ export default class About extends Component {
                         <h4>
                             <br/> 
                             Hey, I'm Priyanshi Patel and I am a 3rd year computer engineering student at the <a rel="noopener noreferrer" className={styles.dohover} href="https://www.utoronto.ca/" target="_blank"> <span style={{color: '#557A95', fontWeight:'bold'}}> University of Toronto </span> </a>. 
-                            I am majoring in software engineering and minoring in A.I with a certificate in Engineering Leadership.
+                            My focus area are software engineering and I'll be minoring in A.I with a certificate in Engineering Leadership.
                             Making projects, such as the ones displayed here, help me get a better understanding of the industry and narrow down where my interests lie.
                             <br/> <br/>
                         </h4>

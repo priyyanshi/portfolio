@@ -10,6 +10,8 @@ import Projects from './components/projects'
 import Front from './components/front'
 import Contact from './components/contact';
 import ChatBot from './chat'
+import {animation} from './components/animations'
+
 
 class App extends Component{
   state =  {
@@ -37,7 +39,7 @@ class App extends Component{
           <Front/>
         
           <div className="App">
-            <BurgerMenu  isOpen={false} right  pageWrapId="other" outerContainerId={"App"}/>
+            <BurgerMenu style={animation.slideInLeft}  isOpen={false} right  pageWrapId="other" outerContainerId={"App"}/>
               <div id="other" >
               </div>
           </div> 

@@ -41,8 +41,20 @@
   height: 4vh;
   left: 84%;
   top: 5%;
+  opacity: 1;
+  animation: slide 3s linear -1s 1;
+
 }
 
+@-webkit-keyframes slide {
+  from {opacity: 0;}
+  to {opacity: 1; }
+}
+
+@keyframes slide {
+  from {opacity: 0;}
+  to {opacity: 1; }
+}
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: #1A1A1D;
