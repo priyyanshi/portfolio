@@ -18,6 +18,8 @@ export default class ChatBot extends Component {
                         --df-messenger-minimized-chat-close-icon-color: #1a1a1a;\
                         --df-messenger-send-icon: white;\
                         --df-messenger-user-message: #e6eff5;\
+                        --df-messenger-chip-color: #e6f7e6;\
+                        --df-messenger-chip-border-color: #e6f7e6;\
                     }\
                 "}
                 </style>

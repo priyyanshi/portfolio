@@ -3,10 +3,14 @@ import styles from './projects.module.css'
 import {animation} from './animations'
 import {StyleRoot} from 'radium'
 import VisibilitySensor from 'react-visibility-sensor'
-import vector from '../pics/vector.png'
-import binary from '../pics/binary.png'
+import vector from '../pics/vector.jpg'
+import vectorG from '../pics/vector.gif'
+import binary from '../pics/binary.jpg'
+import binaryG from '../pics/binary.gif'
 import grapher from '../pics/grapher.png'
-import reroute from '../pics/reroute.png'
+import grapherG from '../pics/grapher.gif'
+import reroute from '../pics/reroute.jpg'
+
 
 const projects = [
     {
@@ -14,6 +18,7 @@ const projects = [
         git: 'https://github.com/priyyanshi/Vector-Fields',
         live: 'https://vector-field-visualizer.herokuapp.com/',
         img: vector,
+        gif: vectorG,
         tech: ['p5.js  ', 'Javascript  ', 'HTML  ', 'CSS '],
         description: 'A vector field visualizer that allows you to explore fields in 3D space. The vectors can be scaled and the quantity of vectors can be adjusted. You are provided a user manual for help and examples to get you started.'
     },
@@ -22,6 +27,7 @@ const projects = [
         git: 'https://github.com/priyyanshi/Data-structures-and-algos',
         live: 'https://data-structures-and-algo.herokuapp.com/',
         img: binary,
+        gif: binaryG,
         tech: ['React ', ' p5.js ', ' Javascript ',' CSS '],
         description: 'A binary search tree visulizer that allows you to insert and delete nodes. Provides depth traversals of the tree, and allows you to visual multiple trees.'
     },
@@ -30,6 +36,7 @@ const projects = [
         git: 'https://github.com/priyyanshi/Grapher-VGA-Graphing-Calculator-',
         live: 'https://cpulator.01xz.net/?sys=arm',
         img: grapher,
+        gif: grapherG,
         tech: ['C  ', 'Arm-Processor  ', 'VGA  '],
         description: 'Grapher is a graphing calculator application that allows users to graph lines, polynomials of power 2, polynomials of power 3, polynomials of power 4, square root functions, and exponential functions. The project targets a DE1-SoC board. This project was done in a group of 2 for a Computer Organization course (ECE243) at the University of Toronto.'
     },
@@ -38,6 +45,7 @@ const projects = [
         git: null,
         live: null,
         img: reroute,
+        gif: reroute,
         tech: 'Engineering Design',
         description: 'Designed a system to notify staff about wandering patients with Dementia in nursing homes. This allows staff to appropriately redirect the patients as necessary. Worked in a team of 4 for Praxis II (ESC102, an engineering design course) to accomplish this.'
     }, 
@@ -70,7 +78,7 @@ export default class Projects extends Component {
 
     render() {
         let k = 0
-        const projComp = projects.map(proj => <Module key={k++} name={proj.name} git={proj.git} live={proj.live} img={proj.img} tech={proj.tech} description={proj.description}/>)
+        const projComp = projects.map(proj => <Module key={k++} name={proj.name} git={proj.git} live={proj.live} gif={proj.gif} img={proj.img} tech={proj.tech} description={proj.description}/>)
 
         return(
             <div ref={this.wrapper}>
@@ -104,6 +112,7 @@ class Module extends Component {
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                     <div className={styles.thumbnail}>
                         <img alt="img" type="image/png" src={this.props.img}/>
+                        <img className={styles.gif} alt="img" src={this.props.gif}/>
                         <div id="overlay" className={styles.overlay}></div>
                     </div>
         
@@ -128,7 +137,8 @@ class Module extends Component {
         <div className={styles.module}>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
             <div className={styles.thumbnail}>
-                <img alt="img"type="image/png" src={this.props.img}/>
+                <img alt="img" type="image/png" src={this.props.img}/>
+                <img className={styles.gif} alt="img" src={this.props.gif}/>
                 <div id="overlay" className={styles.overlay}></div>
             </div>
 
