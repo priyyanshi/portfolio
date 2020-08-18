@@ -1,50 +1,28 @@
 import React, { Component } from 'react' 
 import styles from './about.module.css'
-import {animation} from './animations'
-import {StyleRoot} from 'radium'
-import VisibilitySensor from 'react-visibility-sensor'
 import { NavHashLink as Link } from 'react-router-hash-link';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export default class About extends Component {
-    constructor() {
-        super()
-        this.state =  {
-            active: true,
-            count: 0,
-            animate: {}
-        }
-        this.wrapper = React.createRef();
-        this.styleChange = this.styleChange.bind(this)
-    }
-
-    styleChange = (isVisible) => {
-        if (isVisible) {
-            this.setState( prevState => {
-                return {
-                    count: prevState.count + 1
-                }
-            })
-        }
-        if (isVisible && this.state.count === 1) {
-            this.setState({active: false, animate: animation.pulse})
-        }
-    }
-
+   
     render() {
 
         return(
-            <div ref={this.wrapper}>
-                <VisibilitySensor active={this.state.active} onChange={this.styleChange}>
-                <StyleRoot>
-                <div id="about" style={this.state.animate} className={styles.about}>
+            <div>
+            <ScrollAnimation duration={2} animateIn="fadeIn">
+                <div id="about" className={styles.about}>
+                    
                     <div id="about-text" className={styles.aboutText}>
                             About Me    
+
+                           
+
                     </div>
                     <svg>
                         <line x1="12%" y1="50%" x2="100%" y2="50%" style={{stroke: '#7395AE', strokeWidth: '0.15vw'}}></line>
                     </svg>
                     <div className={styles.aboutInfo}>
-                        
+
                         <h4>
                             <br/> 
                             Hey, I'm Priyanshi Patel and I am a 3rd year computer engineering student at the <span style={{color: '#557A95', fontWeight:'bold'}}> University of Toronto </span>. 
@@ -73,11 +51,9 @@ export default class About extends Component {
                             <li>p5.js</li>
                             <li>MongoDB</li>
                         </ul>
-                        
                     </div>
                 </div>
-                </StyleRoot>
-                </VisibilitySensor>
+                </ScrollAnimation>
             </div>
         )
     }

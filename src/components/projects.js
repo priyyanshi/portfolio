@@ -1,8 +1,5 @@
 import React, { Component } from 'react' 
 import styles from './projects.module.css'
-import {animation} from './animations'
-import {StyleRoot} from 'radium'
-import VisibilitySensor from 'react-visibility-sensor'
 import vector from '../pics/vector.jpg'
 import vectorG from '../pics/vector.gif'
 import binary from '../pics/binary.jpg'
@@ -10,7 +7,8 @@ import binaryG from '../pics/binary.gif'
 import grapher from '../pics/grapher.png'
 import grapherG from '../pics/grapher.gif'
 import reroute from '../pics/reroute.jpg'
-
+import { GlassMagnifier } from "react-image-magnifiers";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const projects = [
     {
@@ -43,48 +41,24 @@ const projects = [
     {
         name: 'ReRoute',
         git: null,
-        live: null,
+        live: "https://youtu.be/HRw8DVKcaxU",
         img: reroute,
         gif: reroute,
-        tech: 'Engineering Design',
+        tech: 'Engineering Design Project',
         description: 'Designed a system to notify staff about wandering patients with Dementia in nursing homes. This allows staff to appropriately redirect the patients as necessary. Worked in a team of 4 for Praxis II (ESC102, an engineering design course) to accomplish this.'
     }, 
 ]
 
 export default class Projects extends Component {
-    constructor() {
-        super()
-        this.state =  {
-            active: true,
-            count: 0,
-            animate: {}
-        }
-        this.wrapper = React.createRef();
-        this.styleChange = this.styleChange.bind(this)
-    }
-
-    styleChange = (isVisible) => {
-        if (isVisible) {
-            this.setState( prevState => {
-                return {
-                    count: prevState.count + 1
-                }
-            })
-        }
-        if (isVisible && this.state.count === 1) {
-            this.setState({active: false, animate: animation.pulse})
-        }
-    }
-
+   
     render() {
         let k = 0
         const projComp = projects.map(proj => <Module key={k++} name={proj.name} git={proj.git} live={proj.live} gif={proj.gif} img={proj.img} tech={proj.tech} description={proj.description}/>)
 
         return(
-            <div ref={this.wrapper}>
-                <VisibilitySensor active={this.state.active} onChange={this.styleChange}>
-                <StyleRoot>
-                <div id="projects" style={this.state.animate} className={styles.projects}>
+            <div>
+                <ScrollAnimation duration={2} animateIn="fadeIn" >
+                <div id="projects" className={styles.projects}>
                     <div id="projects-text" className={styles.projectsText}>
                         Some Things I've Built
                     </div>
@@ -95,8 +69,7 @@ export default class Projects extends Component {
                         {projComp}
                     </div>
                 </div>
-                </StyleRoot>
-                </VisibilitySensor>
+                </ScrollAnimation>
             </div>
         )
     }
@@ -111,56 +84,55 @@ class Module extends Component {
                 <div className={styles.module}>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                     <div className={styles.thumbnail}>
-                        <img alt="img" type="image/png" src={this.props.img}/>
-                        <img className={styles.gif} alt="img" src={this.props.gif}/>
+                        <img className={styles.picMagnify} alt="img" type="image/png" src={this.props.img}/>
+                        <GlassMagnifier className={styles.magnify} imageAlt="Example" imageSrc={this.props.img} />
                         <div id="overlay" className={styles.overlay}></div>
                     </div>
         
                     <div className={styles.description}>   
-                        <h1>
+                        <h1 >
                             {this.props.name}
                         </h1>  
-                        <h3 style={{wordSpacing:'0.4vw'}}>
+                        <h3>
                             <br/> 
                             {this.props.tech}
                             <br/> <br/> <br/> <br/>
                         </h3>
-                        <h4>
-                            {this.props.description}
-                            <br/> <br/>
+                        <h4 dangerouslySetInnerHTML={{__html: this.props.description}}>
                         </h4>
+                        <div style={{display: 'block', position: 'absolute', top: '80%'}}>
+                            <a title="Watch the full showcase presentation!" rel="noopener noreferrer" href={this.props.live} target="_blank"><i className="fa fa-link" style={{color:'#c4b6ab'}}></i></a>
+                        </div>
                     </div>
                 </div> 
             )
         }
         return (
-        <div className={styles.module}>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-            <div className={styles.thumbnail}>
-                <img alt="img" type="image/png" src={this.props.img}/>
-                <img className={styles.gif} alt="img" src={this.props.gif}/>
-                <div id="overlay" className={styles.overlay}></div>
-            </div>
-
-            <div className={styles.description}>   
-                <h1>
-                    {this.props.name}
-                </h1>  
-                <h3 style={{wordSpacing:'0.4vw'}}>
-                    <br/> 
-                    {this.props.tech}
-                    <br/> <br/> <br/> <br/>
-                </h3>
-                <h4>
-                    {this.props.description}
-                    <br/> <br/>
-                </h4>
-                <div style={{display: 'block', position: 'absolute', top: '80%'}}>
-                    <a title="View live site!" rel="noopener noreferrer" href={this.props.live} target="_blank"><i className="fa fa-link" style={{color:'#c4b6ab'}}></i></a>
-                    <a title="View on Github" rel="noopener noreferrer" href={this.props.git} target="_blank"><i className="fa fa-github" style={{color:'#c4b6ab'}}></i></a>
+            <div className={styles.module}>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+                <div className={styles.thumbnail}>
+                    <img className={styles.pic} alt="img" type="image/png" src={this.props.img}/>
+                    <img className={styles.gif} alt="img" src={this.props.gif}/>
+                    <div id="overlay" className={styles.overlay}></div>
                 </div>
-            </div>
-        </div>      
+
+                <div className={styles.description}>   
+                    <h1>
+                        {this.props.name}
+                    </h1>  
+                    <h3 style={{wordSpacing:'0.4vw'}}>
+                        <br/> 
+                        {this.props.tech}
+                        <br/> <br/> <br/> <br/>
+                    </h3>
+                    <h4 dangerouslySetInnerHTML={{__html: this.props.description}}>
+                    </h4>
+                    <div style={{display: 'block', position: 'absolute', top: '80%'}}>
+                        <a title="View live site!" rel="noopener noreferrer" href={this.props.live} target="_blank"><i className="fa fa-link" style={{color:'#c4b6ab'}}></i></a>
+                        <a title="View on Github" rel="noopener noreferrer" href={this.props.git} target="_blank"><i className="fa fa-github" style={{color:'#c4b6ab'}}></i></a>
+                    </div>
+                </div>
+            </div>      
         )
     }
 }

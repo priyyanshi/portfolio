@@ -30,7 +30,6 @@ export default class Front extends Component {
                             </button>
                         </div>
                     </StyleRoot> 
-
                     <About/>
                     <Projects/>
                     <Contact/>
