@@ -33,19 +33,20 @@ class App extends Component{
     return (
       <div>
         <Router>
-          <ChatBot/>
+
           <Header/>
           <Sidebar/>
           <Front/>
         
           <div className="App">
-            <BurgerMenu style={animation.slideInLeft}  isOpen={false} right  pageWrapId="other" outerContainerId={"App"}/>
+          <ChatBot/>
+            <BurgerMenu zIndex="5px" style={animation.slideInLeft}  isOpen={false} right  pageWrapId="other" outerContainerId={"App"}/>
               <div id="other" >
               </div>
           </div> 
-          <Route path="/#about" exact component={About} />
-          <Route path="/#projects" exact component={Projects} />
-          <Route path="/#contact" exact component={Contact} />
+          <Route path="/portfolio/#about" exact component={About} />
+          <Route path="/portfolio/#projects" exact component={Projects} />
+          <Route path="/portfolio/#contact" exact component={Contact} />
         </Router>
       </div>
     )
@@ -59,9 +60,9 @@ function demoAsyncCall() {
 function BurgerMenu(props) {
   return(
       <Menu {...props}>
-          <Link smooth to="/#about" href="./#">About Me</Link>
-          <Link smooth to="/#projects" href="./#">Projects</Link>
-          <Link smooth to="/#contact" href="./#">Contact</Link>
+          <Link smooth to="/portfolio/#about" href="./#">About Me</Link>
+          <Link smooth to="/portfolio/#projects" href="./#">Projects</Link>
+          <Link smooth to="/portfolio/#contact" href="./#">Contact</Link>
           {/* <a href='/#'>Certificates</a> */}
       </Menu>
   )

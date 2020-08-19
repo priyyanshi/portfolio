@@ -42,18 +42,17 @@
   left: 84%;
   top: 5%;
   opacity: 1;
-  animation: slide 3s linear -1s 1;
-
+  animation: 2s ease 0.1s 1 normal none slide;
 }
 
 @-webkit-keyframes slide {
-  from {opacity: 0;}
-  to {opacity: 1; }
+  from {left: 0%;}
+  to {left: 84%; }
 }
 
 @keyframes slide {
-  from {opacity: 0;}
-  to {opacity: 1; }
+  from {left: 0%;}
+  to {left: 84%; }
 }
 /* Color/shape of burger icon bars */
 .bm-burger-bars {

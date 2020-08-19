@@ -84,7 +84,7 @@ class Module extends Component {
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                     <div className={styles.thumbnail}>
                         <img className={styles.picMagnify} alt="img" type="image/png" src={this.props.img}/>
-                        <GlassMagnifier className={styles.magnify} imageAlt="Example" imageSrc={this.props.img} />
+                        <GlassMagnifier magnifierSize="50%" magnifierOffsetX={-50} magnifierOffsetY={-50} className={styles.magnify} imageAlt="Example" imageSrc={this.props.img} />
                         <div id="overlay" className={styles.overlay}></div>
                     </div>
         

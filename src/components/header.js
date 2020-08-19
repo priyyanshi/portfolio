@@ -14,9 +14,9 @@ export default function Header() {
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                 <img src={logo} alt="P" className={styles.logo}></img>
                 <div >
-                    <Link smooth to="/#about" href="/#">About Me</Link>
-                    <Link smooth to="/#projects" href="/#">Projects</Link>
-                    <Link smooth to="/#contact" href="/#">Contact</Link>
+                    <Link smooth to="/portfolio/#about" href="/#">About Me</Link>
+                    <Link smooth to="/portfolio/#projects" href="/#">Projects</Link>
+                    <Link smooth to="/portfolio/#contact" href="/#">Contact</Link>
 
                     {/* <a href='/#'>Certificates</a> */}
                     <a href='/#'>Contact</a>

@@ -24,7 +24,6 @@ export default class ChatBot extends Component {
                 "}
                 </style>
                 <df-messenger id="df-messenger"
-                    style={{dfMessengerButtonTitlebarColor:"white"}}
                     intent="WELCOME"
                     chat-icon={pic}
                     chat-title="Priyanshi"
