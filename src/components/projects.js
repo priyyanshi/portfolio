@@ -57,7 +57,7 @@ export default class Projects extends Component {
 
         return(
             <div>
-                <ScrollAnimation duration={2} animateIn="fadeIn" >
+                <ScrollAnimation duration={2} animateIn="fadeIn" animateOnce={true}>
                 <div id="projects" className={styles.projects}>
                     <div id="projects-text" className={styles.projectsText}>
                         Some Things I've Built
@@ -76,7 +76,6 @@ export default class Projects extends Component {
 }
 
 class Module extends Component {
-
     
     render() {
         if (this.props.git == null) {
@@ -90,16 +89,19 @@ class Module extends Component {
                     </div>
         
                     <div className={styles.description}>   
-                        <h1 >
-                            {this.props.name}
-                        </h1>  
-                        <h3>
-                            <br/> 
-                            {this.props.tech}
-                            <br/> <br/> <br/> <br/>
-                        </h3>
-                        <h4 dangerouslySetInnerHTML={{__html: this.props.description}}>
-                        </h4>
+                        <div style={{display: 'block', position: 'absolute', top: '0%', marginTop: '20px', marginRight: '10px'}}>  
+                            <h1>
+                                {this.props.name}
+                            </h1>  
+                            <h3>
+                                <br/> 
+                                {this.props.tech}
+                                <br/> <br/>
+                            </h3>
+                            <h4 dangerouslySetInnerHTML={{__html: this.props.description}}>
+                            </h4>
+                        </div>
+                            
                         <div style={{display: 'block', position: 'absolute', top: '80%'}}>
                             <a title="Watch the full showcase presentation!" rel="noopener noreferrer" href={this.props.live} target="_blank"><i className="fa fa-link" style={{color:'#c4b6ab'}}></i></a>
                         </div>
@@ -117,16 +119,18 @@ class Module extends Component {
                 </div>
 
                 <div className={styles.description}>   
-                    <h1>
-                        {this.props.name}
-                    </h1>  
-                    <h3 style={{wordSpacing:'0.4vw'}}>
-                        <br/> 
-                        {this.props.tech}
-                        <br/> <br/> <br/> <br/>
-                    </h3>
-                    <h4 dangerouslySetInnerHTML={{__html: this.props.description}}>
-                    </h4>
+                    <div style={{display: 'block', position: 'absolute', top: '0%', marginTop: '20px', marginRight: '10px'}}>  
+                        <h1>
+                            {this.props.name}
+                        </h1>  
+                        <h3 style={{wordSpacing:'0.4vw'}}>
+                            <br/> 
+                            {this.props.tech}
+                            <br/> <br/>
+                        </h3>
+                        <h4 dangerouslySetInnerHTML={{__html: this.props.description}}>
+                        </h4>
+                    </div>
                     <div style={{display: 'block', position: 'absolute', top: '80%'}}>
                         <a title="View live site!" rel="noopener noreferrer" href={this.props.live} target="_blank"><i className="fa fa-link" style={{color:'#c4b6ab'}}></i></a>
                         <a title="View on Github" rel="noopener noreferrer" href={this.props.git} target="_blank"><i className="fa fa-github" style={{color:'#c4b6ab'}}></i></a>

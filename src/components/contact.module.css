@@ -54,7 +54,6 @@
     width: 20%;
     height: 50%;
     top: 25%;
-    background-color: purple;
     color: #1a1a1a;
     right: 20%;
     border-radius: 3px;
@@ -63,10 +62,11 @@
 .links a {
     display: block;
     text-align: center;
+    justify-content: center;
     padding: 16px;
     transition: all 0.3s ease;
     color: #c4b6ab;
-    font-size: 20px;
+    font-size: 2vw;
     height: 33.33%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -83,3 +83,83 @@ color: white;
 
 
     
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) and (max-height: 500px){
+    
+    
+}
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .contact {
+        margin-top: 0%;
+    }
+
+    .contactText {
+        font-size: 3vw;
+        left: 25%;
+    }
+
+    .links a {
+        font-size: 1.5vw;
+    }
+
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .contact {
+        margin-top: 0%;
+    }
+
+    .contactText {
+        font-size: 3vh;
+        left: 25%;
+    }
+
+    .links a {
+        font-size: 1.5vh;
+    }
+}
+

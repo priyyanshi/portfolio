@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function Contact() {
     return(
-        <ScrollAnimation duration={2} animateIn="fadeIn">
+        <ScrollAnimation duration={2} animateIn="fadeIn" animateOnce={true}>
         <div id="contact" className={styles.contact}>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
             <div className={styles.contactText}>

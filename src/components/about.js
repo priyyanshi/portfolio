@@ -9,7 +9,7 @@ export default class About extends Component {
 
         return(
             <div>
-            <ScrollAnimation duration={2} animateIn="fadeIn">
+            <ScrollAnimation duration={2} animateIn="fadeIn" animateOnce={true}>
                 <div id="about" className={styles.about}>
                     
                     <div id="about-text" className={styles.aboutText}>

@@ -29,8 +29,8 @@
 
 /* .front:hover {
     background-color: green;
-} */
-
+}
+ */
 
 
 .frontText{
@@ -96,6 +96,7 @@
     
     .front {
         height: 95vh;
+        background-color: purple;
     }
 
     .frontText {
@@ -177,7 +178,7 @@
         left: 7%;
         right: 7%;
         width: 86%;
-        height: 40%;
+        height: 70%;
     }
 
     .frontText h3 {
@@ -206,7 +207,7 @@
     
 
     .front {
-        height: 100vh;
+        height: 60vh;
         top: 20%;
     }
 
@@ -215,7 +216,7 @@
         left: 7%;
         right: 7%;
         width: 86%;
-        height: 90vh;
+        height: 100%;
     }
 
     .frontText h3 {
@@ -244,11 +245,11 @@
    
 
     .front {
-        height: 100vh;
+        height: 120vh;
     }
 
     .frontText {
-        top: 5%;
+        top: 2%;
         left: 7%;
         right: 7%;
         width: 86%;

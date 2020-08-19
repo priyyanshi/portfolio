@@ -15,7 +15,14 @@
     box-sizing: border-box;
 }
 
+.doFade {
+    animation: fun 2s linear 5s infinite;
+}
 
+@keyframes fun {
+    from {left:0%}
+    to {left: 30%;}
+}
 
 .about  {
     display: block;
@@ -210,10 +217,10 @@
 
     .aboutText {
         font-size: 3vh;
-        width: 25%;
+        width: 17%;
         float: left;
         left: 10%;
-        top: 15%;
+        margin-top: 10%;
     }
 
     .about svg {
@@ -245,8 +252,7 @@
 @media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
     
     .about {
-        margin-top: 65vh;
-
+        margin-top: 75vh;
     }
 
     .aboutText {
@@ -288,7 +294,8 @@
 @media (min-width: 481px) and (max-width: 767px) {
 
     .about {
-        margin-top: 70vh;
+        margin-top: 100vh;
+        height: 150vh;
     }
 
     .aboutText {
