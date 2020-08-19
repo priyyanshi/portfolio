@@ -71,9 +71,9 @@
   left: 10%;
 }
 
-.holder:hover {
+/* .holder:hover {
   background-color: yellow;
-}
+} */
 
 .module {
   height: 21%;
@@ -188,9 +188,9 @@
   padding-right: 10px;
 }
 
-.module:hover .description{
+/* .module:hover .description{
   background-color: red;
-}
+} */
 
 .description h1 {
   font-size: 2vw;
