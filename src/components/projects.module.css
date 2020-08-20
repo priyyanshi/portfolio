@@ -178,6 +178,35 @@
   padding-left: 10px;
 } 
 
+.learned {
+  display: block;
+  position: absolute;
+  width: 105%;
+  height: 110%;
+  background: #1a1a1a;
+  opacity: 0;
+  top: -5%;
+  left: -2.5%;
+  transition: all 0.3s ease;
+  z-index: 2;
+  padding: 10px 10px 0 15px;
+}
+
+.learned h2 {
+  color: #7395AE;
+  font-size: 1.4vw;
+}
+
+.learned h6 {
+  color: #c4b6ab;
+  font-size: 1.1vw;
+}
+
+.module:hover .learned  {
+  opacity: 1;
+  animation: fade 0.5s linear 0s 1;
+}
+
 .description {
   position: relative;
   width: 40%;
@@ -429,6 +458,7 @@
     height: 22%;
   }
 
+
   .description {
     height: 100%;
     width: 40%;
@@ -474,11 +504,10 @@
     height: 70%;
   }
 
-  
-
   .module {
     height: 22%;
   }
+
 
   .description {
     width: 100%;

@@ -18,7 +18,8 @@ const projects = [
         img: vector,
         gif: vectorG,
         tech: ['p5.js  ', 'Javascript  ', 'HTML  ', 'CSS '],
-        description: 'A vector field visualizer that allows you to explore fields in 3D space. The vectors can be scaled and the quantity of vectors can be adjusted. You are provided a user manual for help and examples to get you started.'
+        description: 'A vector field visualizer that allows you to explore fields in 3D space. The vectors can be scaled and the quantity of vectors can be adjusted. You are provided a user manual for help and examples to get you started.',
+        learned: "sup dawg"
     },
     {
         name: 'Binary Search Tree Visualizer',
@@ -27,7 +28,8 @@ const projects = [
         img: binary,
         gif: binaryG,
         tech: ['React ', ' p5.js ', ' Javascript ',' CSS '],
-        description: 'A binary search tree visulizer that allows you to insert and delete nodes. Provides depth traversals of the tree, and allows you to visual multiple trees.'
+        description: 'A binary search tree visulizer that allows you to insert and delete nodes. Provides depth traversals of the tree, and allows you to visual multiple trees.',
+        learned: "sup dawg"
     },
     {
         name: 'VGA Graphing Calculator',
@@ -36,7 +38,8 @@ const projects = [
         img: grapher,
         gif: grapherG,
         tech: ['C  ', 'Arm-Processor  ', 'VGA  '],
-        description: 'Grapher is a graphing calculator application that allows users to graph lines, polynomials of power 2, polynomials of power 3, polynomials of power 4, square root functions, and exponential functions. The project targets a DE1-SoC board. This project was done in a group of 2 for a Computer Organization course (ECE243) at the University of Toronto.'
+        description: 'Grapher is a graphing calculator application that allows users to graph lines, polynomials of power 2, polynomials of power 3, polynomials of power 4, square root functions, and exponential functions. The project targets a DE1-SoC board. This project was done in a group of 2 for a Computer Organization course (ECE243) at the University of Toronto.',
+        learned: "sup dawg"
     },
     {
         name: 'ReRoute',
@@ -45,7 +48,8 @@ const projects = [
         img: reroute,
         gif: reroute,
         tech: 'Engineering Design Project',
-        description: 'Designed a system to notify staff about wandering patients with Dementia in nursing homes. This allows staff to appropriately redirect the patients as necessary. Worked in a team of 4 for Praxis II (ESC102, an engineering design course) to accomplish this.'
+        description: 'Designed a system to notify staff about wandering patients with Dementia in nursing homes. This allows staff to appropriately redirect the patients as necessary. Worked in a team of 4 for Praxis II (ESC102, an engineering design course) to accomplish this.',
+        learned: "sup dawg"
     }, 
 ]
 
@@ -53,7 +57,7 @@ export default class Projects extends Component {
    
     render() {
         let k = 0
-        const projComp = projects.map(proj => <Module key={k++} name={proj.name} git={proj.git} live={proj.live} gif={proj.gif} img={proj.img} tech={proj.tech} description={proj.description}/>)
+        const projComp = projects.map(proj => <Module key={k++} name={proj.name} git={proj.git} live={proj.live} gif={proj.gif} img={proj.img} tech={proj.tech} description={proj.description} learned={proj.learned}/>)
 
         return(
             <div>
@@ -84,12 +88,21 @@ class Module extends Component {
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                     <div className={styles.thumbnail}>
                         <img className={styles.picMagnify} alt="img" type="image/png" src={this.props.img}/>
-                        <GlassMagnifier magnifierSize="50%" magnifierOffsetX={-50} magnifierOffsetY={-50} className={styles.magnify} imageAlt="Example" imageSrc={this.props.img} />
+                        <GlassMagnifier magnifierSize="50%" magnifierOffsetX={25} magnifierOffsetY={-50} className={styles.magnify} imageAlt="Example" imageSrc={this.props.img} />
                         <div id="overlay" className={styles.overlay}></div>
                     </div>
         
                     <div className={styles.description}>   
                         <div style={{display: 'block', position: 'absolute', top: '0%', marginTop: '20px', marginRight: '10px'}}>  
+                            <div id="learned" className={styles.learned}>
+                                <h2>
+                                    What I learned? <br/> <br/>
+                                </h2>
+                                <h6>
+                                    {this.props.learned}
+                                </h6>
+                    
+                            </div>
                             <h1>
                                 {this.props.name}
                             </h1>  
@@ -118,8 +131,16 @@ class Module extends Component {
                     <div id="overlay" className={styles.overlay}></div>
                 </div>
 
-                <div className={styles.description}>   
+                <div className={styles.description}>
                     <div style={{display: 'block', position: 'absolute', top: '0%', marginTop: '20px', marginRight: '10px'}}>  
+                        <div id="learned" className={styles.learned}>
+                                <h2>
+                                    What I learned? <br/> <br/>
+                                </h2>
+                                <h6>
+                                    {this.props.learned}
+                                </h6>
+                        </div>
                         <h1>
                             {this.props.name}
                         </h1>  
