@@ -24,9 +24,9 @@
     margin-top: 0%;
 }
 
-/* .projects:hover {
+.projects:hover {
     background-color: green;
-} */
+}
 
 .projectsText {
   position: absolute;
@@ -64,16 +64,16 @@
 
 .holder {
   position: relative;
-  height: 70%;
-  margin-bottom: 5vh;
+  height: 83%;
+  margin-bottom: 0vh;
   width: 80%;
   float: left;
   left: 10%;
 }
 
-/* .holder:hover {
+.holder:hover {
   background-color: yellow;
-} */
+}
 
 .module {
   height: 21%;
@@ -95,6 +95,7 @@
   height: 100%;
   float: right;
   border-radius: 1.5vw;
+  z-index: 3;
 }
 
 .pic {
@@ -132,8 +133,15 @@
   transition: all 0.3s ease;
 }
 
+@keyframes dis  {
+  from {opacity: 0.8;}
+  to {opacity: 0;}
+}
+
+
 .module:hover .overlay{
   display: none;
+  animation: dis 0.5s linear 0s 1;
 }
 
 .magnify  {

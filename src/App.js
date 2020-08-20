@@ -40,7 +40,7 @@ class App extends Component{
         
           <div className="App">
           <ChatBot/>
-            <BurgerMenu zIndex="5px" style={animation.slideInLeft}  isOpen={false} right  pageWrapId="other" outerContainerId={"App"}/>
+            <BurgerMenu style={animation.slideInLeft}  isOpen={false} right  pageWrapId="other" outerContainerId={"App"}/>
               <div id="other" >
               </div>
           </div> 

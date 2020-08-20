@@ -43,6 +43,7 @@
   top: 5%;
   opacity: 1;
   animation: 2s ease 0.1s 1 normal none slide;
+  z-index: 15!important;
 }
 
 @-webkit-keyframes slide {

@@ -7,7 +7,7 @@ import binaryG from '../pics/binary.gif'
 import grapher from '../pics/grapher.png'
 import grapherG from '../pics/grapher.gif'
 import reroute from '../pics/reroute.jpg'
-import { GlassMagnifier } from "react-image-magnifiers";
+import Magnifier from "react-magnifier";
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const projects = [
@@ -84,11 +84,11 @@ class Module extends Component {
     render() {
         if (this.props.git == null) {
             return (
-                <div className={styles.module}>
+                <div className={styles.module} style={{}}>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                     <div className={styles.thumbnail}>
                         <img className={styles.picMagnify} alt="img" type="image/png" src={this.props.img}/>
-                        <GlassMagnifier magnifierSize="50%" magnifierOffsetX={25} magnifierOffsetY={-50} className={styles.magnify} imageAlt="Example" imageSrc={this.props.img} />
+                        <Magnifier height="100%" width="100%" className={styles.magnify} src={this.props.img} />
                         <div id="overlay" className={styles.overlay}></div>
                     </div>
         
