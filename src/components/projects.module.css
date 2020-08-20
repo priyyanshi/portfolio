@@ -24,9 +24,9 @@
     margin-top: 0%;
 }
 
-.projects:hover {
+/* .projects:hover {
     background-color: green;
-}
+} */
 
 .projectsText {
   position: absolute;
@@ -71,9 +71,9 @@
   left: 10%;
 }
 
-.holder:hover {
+/* .holder:hover {
   background-color: yellow;
-}
+} */
 
 .module {
   height: 21%;
