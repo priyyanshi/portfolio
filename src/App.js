@@ -37,9 +37,8 @@ class App extends Component{
           <Header/>
           <Sidebar/>
           <Front/>
-        
-          <div className="App">
           <ChatBot/>
+          <div className="App">
             <BurgerMenu style={animation.slideInLeft}  isOpen={false} right  pageWrapId="other" outerContainerId={"App"}/>
               <div id="other" >
               </div>

@@ -2,20 +2,6 @@
   text-align: center;
 }
 
-.df{
-  --df-messenger-bot-message: red;
-  --df-messenger-button-titlebar-color: blue;
-  --df-messenger-button-titlebar-font-color: purple;
-  --df-messenger-chat-background-color: gray;
-  --df-messenger-font-color: black;
-  --df-messenger-input-box-color: yellow;
-  --df-messenger-input-font-color: orange;
-  --df-messenger-input-placeholder-font-color: yellowgreen;
-  --df-messenger-minimized-chat-close-icon-color: black;	
-  --df-messenger-send-icon: green;
-  --df-messenger-user-message: teal;
-}
-
 /* Individual item */
 .bm-item {
   display: inline-block;

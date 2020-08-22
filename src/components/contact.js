@@ -17,7 +17,7 @@ export default function Contact() {
             <div className={styles.links}>
                 <a title="Github" rel="noopener noreferrer" href="https://github.com/priyyanshi" target="_blank" className={styles.socialButton}><i className="fa fa-github" style={{color:'#c4b6ab'}}></i> Github</a>
                 <a title="LinkedIn" rel="noopener noreferrer" href="https://www.linkedin.com/in/priyanshi-patel-/" target="_blank" className={styles.socialButton}><i className="fa fa-linkedin" style={{color:'#c4b6ab'}}></i> LinkedIn</a>
-                <a title="Email" rel="noopener noreferrer" href="mailto: priyanshii.patel@mail.utoronto.ca" target="_blank" className={styles.socialButton}><i className="fa fa-envelope" style={{color:'#c4b6ab'}}></i> Email</a>
+                <a title="Email" rel="noopener noreferrer" href="mailto: patel.priyanshi@outlook.com" target="_blank" className={styles.socialButton}><i className="fa fa-envelope" style={{color:'#c4b6ab'}}></i> Email</a>
             </div>
         </div>
         </ScrollAnimation>

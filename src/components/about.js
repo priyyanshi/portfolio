@@ -42,7 +42,7 @@ export default class About extends Component {
                         </h4> 
                         <ul>
                             <li>Python</li>
-                            <li>Javascript (ES6+)</li>
+                            <li>JavaScript (ES6+)</li>
                             <li>C++</li>
                             <li>HTML &amp; CSS</li>
 
