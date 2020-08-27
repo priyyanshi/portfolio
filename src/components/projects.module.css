@@ -20,7 +20,7 @@
     position: relative;
     background-color: #c4b6ab;
     width: 100%;
-    height: 300vh; 
+    height: 375vh; 
     margin-top: 0%;
 }
 
@@ -76,7 +76,7 @@
 } */
 
 .module {
-  height: 21%;
+  height: 18%;
   width: 100%;
   margin-top: 15vh;
   display: relative;
@@ -463,7 +463,7 @@
   }
 
   .module {
-    height: 22%;
+    height: 25%;
   }
 
 

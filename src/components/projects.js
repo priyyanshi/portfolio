@@ -6,6 +6,8 @@ import binary from '../pics/binary.jpg'
 import binaryG from '../pics/binary.gif'
 import grapher from '../pics/grapher.png'
 import grapherG from '../pics/grapher.gif'
+import mapper from '../pics/mapper.jpg'
+import mapperG from '../pics/mapperG.gif'
 import reroute from '../pics/reroute.jpg'
 import Magnifier from "react-magnifier";
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -29,6 +31,15 @@ const projects = [
         gif: binaryG,
         tech: ['React ', ' p5.js ', ' Javascript ',' CSS '],
         description: 'A binary search tree visulizer that allows you to insert and delete nodes. Provides depth traversals of the tree, and allows you to visual multiple trees.',
+        learned: "sup dawg"
+    },
+    {
+        name: 'Mapping Application',
+        git: 'https://github.com/priyyanshi/Mapping-app',
+        img: mapper,
+        gif: mapperG,
+        tech: ['C++'],
+        description: 'Grapher is a graphing calculator application that allows users to graph lines, polynomials of power 2, polynomials of power 3, polynomials of power 4, square root functions, and exponential functions. The project targets a DE1-SoC board. This project was done in a group of 2 for a Computer Organization course (ECE243) at the University of Toronto.',
         learned: "sup dawg"
     },
     {
@@ -82,7 +93,7 @@ export default class Projects extends Component {
 class Module extends Component {
     
     render() {
-        if (this.props.git == null) {
+        if (this.props.name === "ReRoute") {
             return (
                 <div className={styles.module} style={{}}>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
@@ -122,6 +133,48 @@ class Module extends Component {
                 </div> 
             )
         }
+
+        if (this.props.name === "Mapping Application") {
+            return (
+                <div className={styles.module} style={{}}>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+                    <div className={styles.thumbnail}>
+                        <img className={styles.pic} alt="img" type="image/png" src={this.props.img}/>
+                        <img className={styles.gif} alt="img" src={this.props.gif}/>
+                        <div id="overlay" className={styles.overlay}></div>
+                    </div>
+        
+                    <div className={styles.description}>   
+                        <div style={{display: 'block', position: 'absolute', top: '0%', marginTop: '20px', marginRight: '10px'}}>  
+                            <div id="learned" className={styles.learned}>
+                                <h2>
+                                    What I learned? <br/> <br/>
+                                </h2>
+                                <h6>
+                                    {this.props.learned}
+                                </h6>
+                    
+                            </div>
+                            <h1>
+                                {this.props.name}
+                            </h1>  
+                            <h3>
+                                <br/> 
+                                {this.props.tech}
+                                <br/> <br/>
+                            </h3>
+                            <h4 dangerouslySetInnerHTML={{__html: this.props.description}}>
+                            </h4>
+                        </div>
+                            
+                        <div style={{display: 'block', position: 'absolute', top: '80%'}}>
+                            <a title="View on Github" rel="noopener noreferrer" href={this.props.git} target="_blank"><i className="fa fa-github" style={{color:'#c4b6ab'}}></i></a>
+                        </div>
+                    </div>
+                </div> 
+            )
+        }
+
         return (
             <div className={styles.module}>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
