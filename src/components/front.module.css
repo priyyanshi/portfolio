@@ -99,11 +99,6 @@
 */
 
 @media (min-width: 1281px) and (max-height: 500px){
-    
-    .frontText {
-        
-        background: purple;
-    }
 
     .frontText h3 {
         font-size: 5vw;
@@ -130,11 +125,6 @@
   
 @media (min-width: 1025px) and (max-width: 1280px) {
 
-    .frontText {
-       
-        background: green;
-    }
-
     .frontText h3 {
         font-size: 5vw;
     }
@@ -158,9 +148,9 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    
     .frontText {
-        background: blue;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
     }
 
     .frontText h3 {
@@ -177,6 +167,8 @@
 
     .frontText h4 {
         font-size: 2.5vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
     }
 }
 
@@ -188,7 +180,6 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     
     .frontText {
-        background: yellow;
         padding-top: 15vh;
     }
 
@@ -215,6 +206,10 @@
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
+
+    .front {
+        grid-template-rows: repeat(4,minmax(50vh, auto)) 10vh;
+    }
 
     .frontText {
         padding-top: 15vh;

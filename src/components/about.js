@@ -33,7 +33,7 @@ export default class About extends Component {
                             <br/> <br/>
 
                             Additionally, through coursework, internships, and <Link className={styles.dohover}  smooth to="/#projects" href="/#"><span style={{color: '#557A95', fontWeight:'bold'}}> projects </span></Link> I have become comfortable with the following languages and technologies:
-                        </h4> 
+                            <br/> <br/>
                         <ul>
                             <li>Python</li>
                             <li>C++</li>
@@ -45,6 +45,7 @@ export default class About extends Component {
                             <li>React</li>
                             <li>Git</li>
                         </ul>
+                        </h4> 
                     </div> 
                 </div>
             </ScrollAnimation>

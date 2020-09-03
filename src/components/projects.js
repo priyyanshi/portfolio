@@ -39,7 +39,7 @@ const projects = [
         img: mapper,
         gif: mapperG,
         tech: ['C++'],
-        description: 'A mapping application inspired by Google Maps in a team of 3 using C++ and GTK3 for Software Communication and Design (ECE297). We implemented A* pathfinding algorithm to provide best travel route between points. We also optimized a courier delivery algorithm for a courier company driver with multiple deliveries.',
+        description: 'A mapping application inspired by Google Maps in a team of 3 using C++ and GTK3 for Software Communication and Design (ECE297). We implemented A* pathfinding algorithm to provide best travel route between points. We also optimized a courier delivery algorithm for a courier company driver with multiple deliveries. <br/> <br/>',
         learned: 'The project was done over the course of 4 months. It was broken down into 4 milestones. <br/> <br/> We developed the UI layout of the application during the first 2 milestones. <br/> <br/> While, milestone 3 and 4 were used to implement and optimize path finding algorithms for our application.'
     },
     {
@@ -49,7 +49,7 @@ const projects = [
         img: grapher,
         gif: grapherG,
         tech: ['C  ', 'Arm-Processor  ', 'VGA  '],
-        description: 'Grapher is a graphing calculator application that allows users to graph lines, polynomials of power 2, polynomials of power 3, polynomials of power 4, square root functions, and exponential functions. The project targets a DE1-SoC board.',
+        description: 'Grapher is a graphing calculator application that allows users to graph lines, polynomials, square root functions, and exponential functions. The project targets a DE1-SoC board. <br/> <br/>',
         learned: "This project was done in a group of 2 for a Computer Organization course (ECE243) at the University of Toronto. <br/> <br/> We were able to successfully polled I/O devices to get user input and display program on the VGA screen."
     },
     {
@@ -59,8 +59,8 @@ const projects = [
         img: reroute,
         gif: reroute,
         tech: 'Engineering Design Project',
-        description: 'Designed a system to notify staff about wandering residents with Dementia in nursing homes. This allows staff to appropriately redirect the patients as necessary. Worked in a team of 4 for Praxis II (ESC102, an engineering design course) to accomplish this.',
-        learned: "The project was completed throughout the course of a semester. We worked closely with the Fairview Nursing Home to implemented the system. <br/> <br/> Throughout our design process, we priotized the freedom of the residents and ensured that our design did not hinder their social interactions or experience at the nursing home."
+        description: 'Designed a system to notify staff about wandering residents with Dementia in nursing homes. This allows staff to appropriately redirect the patients as necessary. Worked in a team of 4 for Praxis II (ESC102, an engineering design course) to accomplish this. <br/> <br/>',
+        learned: "The project was completed throughout the course of a semester. We worked closely with the Fairview Nursing Home to implemented the system. <br/> <br/> Throughout our design process, we priotized the freedom of the residents and ensured that our design did not hinder their social interactions or experience at the nursing home. "
     }, 
 ]
 
