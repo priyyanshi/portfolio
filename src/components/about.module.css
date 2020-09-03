@@ -311,30 +311,12 @@
 @media (min-width: 320px) and (max-width: 480px) {
     
     .about {
-        margin-top: 65vh;
-        height: 110vh;
-        background: pink;
-
+        grid-template-columns: 25vw 50vw;
+        grid-template-rows: 10vh 83vh;
     }
 
     .aboutText {
-        font-size: 3vh;
-        width: 25%;
-        float: left;
-        left: 10%;
-        top: 25%;
-    }
-
-    .about svg {
-        top: 25%;
-    }
-
-    .aboutInfo {
-        width: 65%;
-        float: left;
-        left: 17%;
-        top: 25%;
-        height: 95vh;
+        font-size: 4vh;
     }
 
     .aboutInfo h4 {

@@ -40,3 +40,79 @@
     background: #293C47;
     color: white;
 }
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) and (max-height: 500px){
+    .footer{
+      background: purple;
+    }
+      
+  }
+    
+    /* 
+      ##Device = Laptops, Desktops
+      ##Screen = B/w 1025px to 1280px
+    */
+    
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .footer{
+      background: green;
+    }
+  }
+  
+  /* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .footer{
+      background: blue;
+    }
+  }
+  
+  /* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .footer{
+      background: yellow;
+    }
+      
+  }
+  
+  /* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+      .footer {
+          font-size: 1vw;
+          height: 10%;
+          background: greenyellow;
+      }
+  
+  }
+  
+  /* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+      .socialBar a{
+        font-size: 20px;
+      }
+  
+      
+  }
+  
+  
