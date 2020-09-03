@@ -17,35 +17,28 @@
 
 
 .front {
-    display: block;
+    display: grid;
+    grid-template-rows: repeat(4,minmax(50vh, auto)) 5vh;
     position: absolute;
     background-color: #c4b6ab;
-    width: 90%;
-    height: 70vh; 
-    top: 15%;
+    top: 10%;
     right: 3%;
     left: 7%;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
 }
-
-/* .front:hover {
-    background-color: green;
-}
- */
 
 
 .frontText{
-    position: relative;
-    float: left;
-    width: 60%;
-    height: 55vh;
-    left: 20%;
-    margin-top: 7%;
+    width: 100%;
+    grid-row: 1/2;
+    display: inline-grid;
     text-align: center;
+    padding-top: 22vh;
+    padding-bottom: 8vh;
 }
-
-/* .frontText:hover {
-    background-color: yellow;
-} */
 
 .frontText h3{
     color: #557A95;
@@ -59,11 +52,24 @@
     font-size: 6vw;
 }
 
-.frontText h2{
+
+.frontText h2 {
     color: #293C47;
     font-weight: bold;
     font-size: 3vw;
-}
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: auto auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 3s steps(30, end) 2;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  
 
 .frontText h4{
     color: #5D5C61;
@@ -71,7 +77,7 @@
 }
 
 .frontText button{
-    position: relative;
+    justify-self: center;
     width: 15%;
     height: 5vh;
     font-size: 2vw;
@@ -95,15 +101,12 @@
 @media (min-width: 1281px) and (max-height: 500px){
     
     .front {
-        height: 95vh;
-        background-color: purple;
+        
     }
 
     .frontText {
-        top: 5%;
-        left: 7%;
-        right: 7%;
-        width: 86%;
+        
+        background: purple;
     }
 
     .frontText h3 {
@@ -133,14 +136,12 @@
    
 
     .front {
-        height: 95vh;
+        
     }
 
     .frontText {
-        top: 5%;
-        left: 7%;
-        right: 7%;
-        width: 86%;
+       
+        background: green;
     }
 
     .frontText h3 {
@@ -169,16 +170,11 @@
     
 
     .front {
-        top: 30%;
-        height: 50vh;
+       
     }
 
     .frontText {
-        top: 15%;
-        left: 7%;
-        right: 7%;
-        width: 86%;
-        height: 70%;
+        background: blue;
     }
 
     .frontText h3 {
@@ -207,16 +203,11 @@
     
 
     .front {
-        height: 60vh;
-        top: 20%;
+        
     }
 
     .frontText {
-        top: 15%;
-        left: 7%;
-        right: 7%;
-        width: 86%;
-        height: 100%;
+        background: yellow;
     }
 
     .frontText h3 {
@@ -245,14 +236,11 @@
    
 
     .front {
-        height: 120vh;
+        
     }
 
     .frontText {
-        top: 2%;
-        left: 7%;
-        right: 7%;
-        width: 86%;
+        background: greenyellow;
     }
 
     .frontText h3 {
@@ -281,15 +269,13 @@
     
 
     .front {
-        height: 100vh;
-        top: 25%;
+        top: 15vh;
+        grid-template-rows: 80vh 50px 10px 40px 60px;
+
     }
 
     .frontText {
-        left: 7%;
-        right: 7%;
-        width: 86%;
-        height: 80%;
+        background: rgb(104, 66, 72);
     }
 
     .frontText h3 {

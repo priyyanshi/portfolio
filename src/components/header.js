@@ -4,7 +4,7 @@ import logo from '../pics/logo.png'
 import {animation} from './animations'
 import {StyleRoot} from 'radium'
 import { NavHashLink as Link } from 'react-router-hash-link';
-
+import resume from '../pics/Resume.pdf'
 
 export default function Header() {
     return(
@@ -21,7 +21,7 @@ export default function Header() {
                     {/* <a href='/#'>Certificates</a> */}
                     <a href='/#'>Contact</a>
                 </div>
-                <button> Resume </button>
+                <a style={{color : '#c4b6ab'}} rel="noopener noreferrer" target="_blank" href={resume}><button>Resume</button></a>
             </div>
             </StyleRoot>
         </div>

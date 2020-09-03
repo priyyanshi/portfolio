@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './contact.module.css'
 import ScrollAnimation from 'react-animate-on-scroll';
+import ReactContactForm from 'react-mail-form';
 
 
 export default function Contact() {
@@ -14,11 +15,8 @@ export default function Contact() {
             <svg>
                 <line x1="50%" y1="0%" x2="50%" y2="100%" style={{stroke: '#7395AE', strokeWidth: '0.15vw'}}></line>
             </svg>
-            <div className={styles.links}>
-                <a title="Github" rel="noopener noreferrer" href="https://github.com/priyyanshi" target="_blank" className={styles.socialButton}><i className="fa fa-github" style={{color:'#c4b6ab'}}></i> Github</a>
-                <a title="LinkedIn" rel="noopener noreferrer" href="https://www.linkedin.com/in/priyanshi-patel-/" target="_blank" className={styles.socialButton}><i className="fa fa-linkedin" style={{color:'#c4b6ab'}}></i> LinkedIn</a>
-                <a title="Email" rel="noopener noreferrer" href="mailto: patel.priyanshi@outlook.com" target="_blank" className={styles.socialButton}><i className="fa fa-envelope" style={{color:'#c4b6ab'}}></i> Email</a>
-            </div>
+            <ReactContactForm titleMaxLength={500} contentsMaxLength={5000} buttonText="Send" contentsPlaceholder="Message" titlePlaceholder="Subject" className={styles.form} to="patel.priyanshi@outlook.com" />
+            
         </div>
         </ScrollAnimation>
     )
