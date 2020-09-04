@@ -569,8 +569,8 @@
     
   .projects {
     grid-template-columns: 30vw 45vw;
-    grid-template-rows: 20vh 390vh;
-    padding-top: 10vh;
+    grid-template-rows: 15vh 390vh;
+    padding-top: 5vh;
   }
 
   .projects svg {
@@ -585,6 +585,7 @@
 
   .holder {
     margin-top: 5vh;
+    padding-top: 0vh;
   }
 
   .thumbnail {
