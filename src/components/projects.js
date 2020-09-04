@@ -71,7 +71,7 @@ export default class Projects extends Component {
         const projComp = projects.map(proj => <Module key={k++} name={proj.name} git={proj.git} live={proj.live} gif={proj.gif} img={proj.img} tech={proj.tech} description={proj.description} learned={proj.learned}/>)
 
         return(
-            <ScrollAnimation duration={2} animateIn="fadeIn" animateOnce={true}>
+            <ScrollAnimation duration={1.5} animateIn="fadeIn" animateOnce={false}>
             <div id="projects" className={styles.projects}>
             
                 <div id="projects-text" className={styles.projectsText}>

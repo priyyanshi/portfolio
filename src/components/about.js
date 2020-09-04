@@ -8,7 +8,7 @@ export default class About extends Component {
     render() {
 
         return(
-            <ScrollAnimation duration={2} animateIn="fadeIn" animateOnce={true}>
+            <ScrollAnimation duration={1.5} animateIn="fadeIn" animateOnce={false}>
                 <div id="about" className={styles.about}>
                     
                     

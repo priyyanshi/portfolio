@@ -6,18 +6,20 @@ import {animation} from './animations'
 import { NavHashLink as Link } from 'react-router-hash-link';
 import Contact from './contact'
 import Footer from './footer'
-import ScrollAnimation from 'react-animate-on-scroll';
+// import ScrollAnimation from 'react-animate-on-scroll';
+import {StyleRoot} from 'radium'
 
 export default class Front extends Component {
 
     render() {
         return(
             <div>
+                <StyleRoot>
                 <div id="front" className={styles.front}>
                     <div id="front-text" className={styles.frontText}  style={animation.pulse}>
-                        <ScrollAnimation duration={4} animateIn='rubberBand' initiallyVisible={true}>
+                        {/* <ScrollAnimation duration={0.8} animateIn="pulse" initiallyVisible={false} animateOnce={true}> */}
                             <h2>Hello! Welcome to my portfolio.</h2>
-                        </ScrollAnimation>
+                        {/* </ScrollAnimation> */}
                         <h3>My name is</h3> 
                         <h1>Priyanshi Patel.</h1>
                         
@@ -34,7 +36,8 @@ export default class Front extends Component {
                     <Projects/>
                     <Contact/>
                     <Footer/>
-                </div>  
+                </div> 
+                </StyleRoot> 
             </div>
         )
     }

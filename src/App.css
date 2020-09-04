@@ -27,8 +27,9 @@
   height: 4vh;
   left: 84%;
   top: 5%;
-  opacity: 1;
-  animation: 4s ease 0.1s 1 normal none slide;
+  opacity: 0;
+  animation: 2s ease 0.1s 1 normal none slide;
+  animation-fill-mode: forwards;
   z-index: 15!important;
 }
 
@@ -111,7 +112,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .bm-burger-button {
     display: inline;
-    left: 90%;
+    left: 92%;
   }
 }
 
@@ -145,6 +146,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .bm-burger-button {
     display: inline;
+    left: 90%;
   }
 
 }
