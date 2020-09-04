@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Sidebar from './components/sidebar'
 import Header from './components/header'
-import {stack as Menu} from 'react-burger-menu'
+import {slide as Menu} from 'react-burger-menu'
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import {NavHashLink as Link} from 'react-router-hash-link';
 import About from './components/about'

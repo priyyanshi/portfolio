@@ -28,7 +28,7 @@ export default class Front extends Component {
                             Take a look at some of the projects I've built!
                         </h4>
                         <br/> 
-                        <Link smooth to="/#about" style={{color: '#c4b6ab'}}href="/#"><button>▼</button></Link>
+                        <Link smooth to="/portfolio/#projects" style={{color: '#c4b6ab'}}href="/#"><button>▼</button></Link>
                     </div>
                     <About/>
                     <Projects/>

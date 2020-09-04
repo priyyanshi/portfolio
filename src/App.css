@@ -62,7 +62,7 @@
 .bm-menu {
   background: #1A1A1D;
   font-size: 5vw;
-  padding-top: 25%;
+  padding-top: 35vh;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -114,6 +114,9 @@
     display: inline;
     left: 92%;
   }
+  .bm-menu {
+    font-size: 6vw;
+  }
 }
 
 /* 
@@ -124,6 +127,9 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .bm-burger-button {
     display: inline;
+  }
+  .bm-menu {
+    font-size: 4vw;
   }
 }
 
@@ -147,6 +153,10 @@
   .bm-burger-button {
     display: inline;
     left: 90%;
+  }
+
+  .bm-menu {
+    font-size: 10vw;
   }
 
 }
