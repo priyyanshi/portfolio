@@ -37,14 +37,11 @@
     text-align: center;
     padding-top: 22vh;
     padding-bottom: 8vh;
-    padding-right: 10vw;
-    padding-left: 10vw;
 }
 
 .frontText h3{
     color: #557A95;
     font-size: 4vw;
-
 }
 
 .frontText h1{
@@ -58,23 +55,18 @@
     color: #293C47;
     font-weight: bold;
     font-size: 3vw;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: auto auto; /* Gives that scrolling effect as the typing happens */
-    animation: 
-      typing 3s steps(30, end) 2;
+    justify-self: center;
   }
   
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
+
   
   
 
 .frontText h4{
     color: #5D5C61;
     font-size: 1.3vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
 .frontText button{

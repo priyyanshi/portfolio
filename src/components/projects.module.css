@@ -92,16 +92,22 @@
 }
 
 .gif  {
-  display: inline-block;
+  display: none;
   position: absolute;
   vertical-align: middle;
   width: 100%;
   height: 100%;
   opacity: 0;
   z-index: 4;
+  outline: none;
+}
+
+.gif::-webkit-media-controls-overlay-play-button {
+  display: none;
 }
 
 .module:hover .gif  {
+  display: inline-block;
   opacity: 1;
   animation: fade 0.5s linear 0s 1;
 }
