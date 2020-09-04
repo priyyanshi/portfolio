@@ -22,8 +22,8 @@
     position: absolute;
     background-color: #c4b6ab;
     top: 10%;
-    right: 3%;
-    left: 7%;
+    right: 7%;
+    left: 10%;
     justify-content: center;
     align-content: center;
     justify-items: center;
@@ -32,12 +32,13 @@
 
 
 .frontText{
-    width: 100%;
     grid-row: 1/2;
     display: inline-grid;
     text-align: center;
     padding-top: 22vh;
     padding-bottom: 8vh;
+    padding-right: 10vw;
+    padding-left: 10vw;
 }
 
 .frontText h3{
@@ -208,7 +209,7 @@
 @media (min-width: 481px) and (max-width: 767px) {
 
     .front {
-        grid-template-rows: repeat(4,minmax(50vh, auto)) 10vh;
+        grid-template-rows: repeat(4,minmax(50vh, auto)) 3vh;
     }
 
     .frontText {
@@ -241,12 +242,13 @@
     
 
     .front {
-        grid-template-rows: repeat(4,minmax(50vh, auto)) 5vh;
+        grid-template-rows: repeat(4,minmax(50vh, auto)) 3vh;
     }
 
     .frontText {
         align-self: center;
         justify-self: center;
+        overflow:hidden;
     }
 
     .frontText h3 {

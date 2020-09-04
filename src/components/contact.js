@@ -13,7 +13,7 @@ export default function Contact() {
                 Get In Touch
             </div>
             <svg>
-                <line x1="50%" y1="0%" x2="50%" y2="100%" style={{stroke: '#7395AE', strokeWidth: '0.15vw'}}></line>
+                <line x1="50%" y1="0%" x2="50%" y2="100%" style={{stroke: '#7395AE'}}></line>
             </svg>
             <ReactContactForm titleMaxLength={500} contentsMaxLength={5000} buttonText="Send" contentsPlaceholder="Message" titlePlaceholder="Subject" className={styles.form} to="patel.priyanshi@outlook.com" />
             

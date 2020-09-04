@@ -15,16 +15,6 @@
     box-sizing: border-box;
 }
 
-/* .projects {
-    display: inline-grid;
-    position: relative;
-    background-color: #c4b6ab;
-    width: 100%;
-    height: 375vh; 
-    margin-top: 0%;
-    background: rgb(47, 104, 104);
-} */
-
 .projects {
   grid-row: 3/4;
   display: grid;
@@ -35,10 +25,6 @@
   padding-top: 15vh;
   padding-bottom: 20vh;
 }
-
-/* .projects:hover {
-    background-color: green;
-} */
 
 .projectsText {
   display: inline-grid;
@@ -52,9 +38,6 @@
   height: 100%;
 }
 
-/* .projectsText:hover {
-  background-color: yellow;
-} */
 
 .projects svg {
   display: inline-grid;
@@ -62,11 +45,9 @@
   grid-row: 1/2;
   width: 100%;
   height: 100%;
+  stroke-width: 0.3vw;
 }
 
-/* .projects svg:hover {
-  background-color: yellow;
-} */
 
 .holder {
   grid-row: 2/3;
@@ -80,10 +61,6 @@
   justify-content: center;
 }
 
-/* .holder:hover {
-  background-color: yellow;
-} */
-
 .module:nth-child(1n) {
   display: grid;
   height: 100%;
@@ -92,10 +69,6 @@
   grid-template-columns: 25vw 45vw;
   margin-bottom: 10vh;
 }
-
-/* .module:hover {
-  background-color: greenyellow;
-} */
 
 .thumbnail {
   display: inline-grid;
@@ -417,6 +390,10 @@
     margin-bottom: 10vh;
   }
 
+  .projects svg {
+    stroke-width: 0.5vw;
+}
+
   .holder {
     margin-top: 0vh;
   }
@@ -485,17 +462,26 @@
   
   .projects {
     grid-template-columns: 20vw 55vw;
-    grid-template-rows: 20vh 290vh;
+    grid-template-rows: 20vh 490vh;
+    padding-top: 0;
+  }
+
+  .projects svg {
+    stroke-width: 0.25vw;
   }
 
   .module:nth-child(1n) {
-    grid-template-rows: 40vh 10vh;
-    grid-template-columns: 30vw 55vw;
+    grid-template-rows: 35vh 55vh;
+    grid-template-columns: 65vw 10vw;
     margin-bottom: 10vh;
   }
 
   .holder {
     margin-top: 5vh;
+  }
+
+  .links a{
+    font-size: 5vw;
   }
 
   .projectsText {
@@ -507,19 +493,19 @@
   }
   
   .description h3 {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
 
   .description h4 {
-    font-size: 1.35vw;
+    font-size: 1.5vw;
   }
 
   .learned h2 {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 
   .learned h6 {
-    font-size: 1.3vw;
+    font-size: 1.5vw;
   }
 }
 
@@ -532,6 +518,10 @@
   .projects {
     grid-template-columns: 20vw 55vw;
     grid-template-rows: 20vh 360vh;
+  }
+
+  .projects svg {
+    stroke-width: 0.35vw;
   }
 
   .module:nth-child(1n) {
@@ -581,6 +571,10 @@
     grid-template-columns: 30vw 45vw;
     grid-template-rows: 20vh 390vh;
     padding-top: 10vh;
+  }
+
+  .projects svg {
+    stroke-width: 0.35vw;
   }
 
   .module:nth-child(1n) {
