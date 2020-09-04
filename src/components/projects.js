@@ -1,13 +1,13 @@
 import React, { Component } from 'react' 
 import styles from './projects.module.css'
 import vector from '../pics/vector.jpg'
-import vectorG from '../pics/vector.gif'
+import vectorG from '../pics/vector.webp'
 import binary from '../pics/binary.jpg'
-import binaryG from '../pics/binary.gif'
+import binaryG from '../pics/binary.webp'
 import grapher from '../pics/grapher.png'
-import grapherG from '../pics/grapher.gif'
+import grapherG from '../pics/grapher.webp'
 import mapper from '../pics/mapper.jpg'
-import mapperG from '../pics/mapperG.gif'
+import mapperG from '../pics/mapper.gif'
 import reroute from '../pics/reroute.jpg'
 import Magnifier from "react-magnifier";
 import ScrollAnimation from 'react-animate-on-scroll';
