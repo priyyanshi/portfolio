@@ -18,24 +18,25 @@
 /************* FROM ANIMATE.CSS *****************/
 @-webkit-keyframes slideInDown {
     from {
+      visibility: visible;
       -webkit-transform: translate3d(0, -100%, 0);
       transform: translate3d(0, -100%, 0);
     }
   
     to {
-      visibility: visible;
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
   }
   @keyframes slideInDown {
     from {
+      visibility: visible;
       -webkit-transform: translate3d(0, -100%, 0);
       transform: translate3d(0, -100%, 0);
     }
   
     to {
-        visibility: visible;
+       
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
