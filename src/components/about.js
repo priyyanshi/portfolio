@@ -40,10 +40,10 @@ export default class About extends Component {
                             <li>JavaScript (ES6+)</li>
                             <li>HTML &amp; CSS</li>
 
-                            <li>Data Structures &amp; Algorithms</li>
-                            <li>Node.js</li>
+                            <li>Node</li>
                             <li>React</li>
                             <li>Git</li>
+                            <li>p5.js</li>
                         </ul>
                         </h4> 
                     </div> 

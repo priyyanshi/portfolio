@@ -9,7 +9,7 @@ import resume from '../pics/Resume.pdf'
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+  if (prevScrollpos> currentScrollPos ) {
     document.getElementById("header-temp").style.animationName = styles.slideInDown;
     document.getElementById("header-temp").style.animationFillMode = "forwards";
 
