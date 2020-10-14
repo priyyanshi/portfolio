@@ -8,17 +8,28 @@ import resume from '../pics/Resume.pdf'
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos> currentScrollPos ) {
-    document.getElementById("header-temp").style.animationName = styles.slideInDown;
-    document.getElementById("header-temp").style.animationFillMode = "forwards";
+  if (!isTop()) {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos> currentScrollPos ) {
+      document.getElementById("header-temp").style.animationName = styles.slideInDown;
+      document.getElementById("header-temp").style.animationFillMode = "forwards";
 
-  } else {
-    document.getElementById("header-temp").style.animationName = styles.slideOutUp;
-    document.getElementById("header-temp").style.animationFillMode = "forwards";
+    } else {
+      document.getElementById("header-temp").style.animationName = styles.slideOutUp;
+      document.getElementById("header-temp").style.animationFillMode = "forwards";
+    }
+    prevScrollpos = currentScrollPos;
   }
-  prevScrollpos = currentScrollPos;
 }
+
+function isTop() {
+  if (window.pageYOffset === 0) {
+    return true 
+  } else {
+    return false
+  }
+}
+
 
 export default function Header() {
     return(

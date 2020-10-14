@@ -227,7 +227,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .header {
-        bottom: 85%
+        bottom: 88%
     }
 
     .header div{
@@ -247,8 +247,8 @@
     }
 
     .header img {
-        width: 15vh;
-        height: 15vh;
+        width: 10vh;
+        height: 10vh;
     }
 
 }
@@ -260,7 +260,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .header {
-        bottom: 85%
+        bottom: 88%
     }
 
     .header div{
@@ -280,8 +280,8 @@
     }
 
     .header img {
-        width: 15vh;
-        height: 15vh;
+        width: 10vh;
+        height: 10vh;
     }
 
 

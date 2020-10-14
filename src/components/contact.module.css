@@ -147,12 +147,12 @@
     }
 
     .contactText {
-        font-size: 7vw;
+        font-size: 5vw;
 
     }
 
     .form input {
-        font-size: 3vw;
+        font-size: 2vw;
         border-width: 0.5vw;
         border-width: 0.5vw;
     }
@@ -162,7 +162,7 @@
         min-height: 30vh;
         max-height: 50vh;
         max-width: 45vw;
-        font-size: 3vw;
+        font-size: 2vw;
         border-width: 0.5vw;
     }
 

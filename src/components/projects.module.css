@@ -386,13 +386,13 @@
 
   .projects {
     grid-template-columns: 25vw 50vw;
-    grid-template-rows: 20vh 380vh;
+    grid-template-rows: 10vh 370vh;
     padding-top: 10vh;
   }
 
   .module:nth-child(1n) {
-    grid-template-rows: 40vh 30vh;
-    grid-template-columns: 60vw 15vw;
+    grid-template-rows: 25vh 30vh;
+    grid-template-columns: 50vw 10vw;
     margin-bottom: 10vh;
   }
 
@@ -422,11 +422,11 @@
 
   .links a{
     display: block;
-    font-size: 9vw;
+    font-size: 5vw;
   }
 
   .projectsText {
-    font-size: 4vh;
+    font-size: 3vh;
   }
 
   .description {
@@ -434,15 +434,15 @@
   }
 
   .description h1 {
-    font-size: 5vw;
+    font-size: 3.5vw;
   }
   
   .description h3 {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 
   .description h4 {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 
   .learned {
@@ -450,11 +450,11 @@
   }
 
   .learned h2 {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .learned h6 {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 
 }
@@ -468,7 +468,7 @@
   
   .projects {
     grid-template-columns: 20vw 55vw;
-    grid-template-rows: 20vh 490vh;
+    grid-template-rows: 10vh 490vh;
     padding-top: 0;
   }
 
@@ -484,6 +484,7 @@
 
   .holder {
     margin-top: 5vh;
+    
   }
 
   .links a{
@@ -491,11 +492,11 @@
   }
 
   .projectsText {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .description h1 {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
   
   .description h3 {

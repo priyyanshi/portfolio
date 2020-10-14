@@ -144,8 +144,9 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
     .frontText {
-        margin-top: 10vh;
+        margin-top: 5vh;
         margin-bottom: 5vh;
     }
 
