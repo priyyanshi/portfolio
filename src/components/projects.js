@@ -35,7 +35,7 @@ const projects = [
     },
     {
         name: 'Mapping Application',
-        git: 'https://github.com/priyyanshi/Mapping-app',
+        git: 'https://github.com/priyyanshi/Mapping-application',
         img: mapper,
         gif: mapperG,
         tech: ['C++'],
