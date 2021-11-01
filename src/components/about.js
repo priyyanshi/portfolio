@@ -23,12 +23,11 @@ export default class About extends Component {
                         
                         <h4>
                             <br/> <br/>
-                            Hey, I'm Priyanshi Patel and I am a 3rd year computer engineering student at the <span style={{color: '#557A95', fontWeight:'bold'}}> University of Toronto </span>. 
-                            My focus area is software engineering and I'll be minoring in A.I with a certificate in Engineering Leadership.
-                            Making projects, such as the ones displayed here, help me get a better understanding of the industry and narrow down where my interests lie.
+                            Hey, I'm Priyanshi and I am a computer engineering student at the <span style={{color: '#557A95', fontWeight:'bold'}}> University of Toronto</span>. 
+                            I am currently working as Backend Development Intern at <span style={{color: '#557A95', fontWeight:'bold'}}> IBM</span>.
                             <br/> <br/>
 
-                            My technical experience consists of my time as a Software Intern at <a rel="noopener noreferrer" className={styles.dohover} href="https://www.getfetch.ca/index.html" target="_blank"> <span style={{color: '#557A95', fontWeight:'bold'}}> Fetch </span> </a>. 
+                            My previous technical experience consists of my time as a Software Intern at <a rel="noopener noreferrer" className={styles.dohover} href="https://www.getfetch.ca/index.html" target="_blank"> <span style={{color: '#557A95', fontWeight:'bold'}}> Fetch</span></a>. 
                             As an intern, I independently developed a customer relationship management (CRM) system using Meteor.js and Node. I worked with MongoDB to create a responsive database for the CRM system.
                             <br/> <br/>
 
@@ -39,11 +38,15 @@ export default class About extends Component {
                             <li>C++</li>
                             <li>JavaScript (ES6+)</li>
                             <li>HTML &amp; CSS</li>
+                            <li>Java</li>
+                            <li>GraphQL</li>
 
-                            <li>Node</li>
-                            <li>React</li>
+                            <li>PyTorch</li>
                             <li>Git</li>
-                            <li>p5.js</li>
+                            <li>Elasticsearch &amp; Kibana</li>
+                            <li>React</li>
+                            <li>Docker</li>
+                            <li>Kubernetes</li>
                         </ul>
                         </h4> 
                     </div> 
