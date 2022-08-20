@@ -22,7 +22,7 @@ export default class About extends Component {
                     <div className={styles.aboutInfo}>
                         
                         <h4>
-                            <br/> <br/>
+                            <br/> 
                             Hey, I'm Priyanshi and I am a computer engineering student at the <span style={{color: '#557A95', fontWeight:'bold'}}> University of Toronto</span>. 
                             I am currently working as Software Development Intern at <span style={{color: '#557A95', fontWeight:'bold'}}> Amazon</span>.
                             <br/> <br/>
@@ -40,14 +40,12 @@ export default class About extends Component {
                             <li>JavaScript (ES6+)</li>
                             <li>HTML &amp; CSS</li>
                             <li>Java</li>
-                            <li>GraphQL</li>
 
-                            <li>PyTorch</li>
+                            <li>AWS Lambda &amp; DynamoDB</li>
                             <li>Git</li>
                             <li>Elasticsearch &amp; Kibana</li>
                             <li>React</li>
-                            <li>Docker</li>
-                            <li>Kubernetes</li>
+                            <li>Docker &amp; Kubernetes</li>
                         </ul>
                         </h4> 
                     </div> 
